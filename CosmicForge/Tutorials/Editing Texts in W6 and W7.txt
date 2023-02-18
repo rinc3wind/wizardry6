@@ -1,0 +1,64 @@
+***********************
+Text Editor Dialog
+***********************
+
+Texts are heavily used by the game to deliver information to user. So they are important.
+Each Text consists of one or more Text Strings and has some kind of ID (code).
+When assigning a Text to an item, map event or another entity you can pick up either the Text or one of its Strings.
+
+You can add new Texs and Text Strings, modify existing Texts and Text Strings and delete existing Texts and Text Strings. Use right mouse button in the Text tree control on the Text Editor or Text Selection dialogs to invoke action menu.
+You are restricted in altering some Texts because they are used by the Game's code and altering them may ruin everything. You are only allowed to modify content of such Texts.
+
+
+Special Symbols
+***********************
+
+Texts supports some special symbols. They will not be shown in the Game, but they change the way text is shown.
+Texts can be used in different environments: When 'reading an item', in game screen, in Incidents.
+It seems that all different environments treat them differently. You must consider that fact.
+The full information on special symbols is unavailable. You have to experiment yourself. If you find out something which is unknown to me, please, let me know.
+Some of them can do following:
+
+Game Screen Texts:
+@	- Wait for button + begin next Texts Screen.
+!	- Begin next Text Line.
+%	- Wait for a while + next text string.
+#	- draw Frame.
+&	- ?
+~c	- ?
+]	- New screen
+
+Incidents:
+]	- New screen
+%	- Wait for a while + next text string.
+
+Readable:
+@	- Wait for button + begin next Texts Screen.
+
+The known special simbols:
+	~ $ ^ | > } [ ] @ % ~c & # !
+
+
+
+Meta Symbols
+***********************
+
+Also there are so-called 'Meta-Symbols' that are used to transfer information through the Texts.
+For example, when NPC asks you a question the Meta-Symbols determine which Script Commands will be executed after you have selected an answer.
+
+
+Notes
+***********************
+When you alter the Text database you may initiate code changing for some Texts.
+Obviously, the references (from Map Events, NPC Script Commands, Items, etc) to these Texts should be updated.
+The Editor does it automatically and alter the game data in memory.
+Be warned though that if you have other editor dialogs opened while this happen you may encounter some inconsistency.
+For example:
+You have opened Map Editor Dialog and created a new Text Event, than to assign a Text to the newly created Event you go to Text Editor dialog, create a Text and pick it up.
+Let us assume that creation of the new Text have altered the code of the next Text, to which another Text Event on the same map refers.
+The Editor automatically have updated this Text Event to refer to the same Text using altered code and modified the data in the memory.
+But the Map Editor has its own temporary memory in which this automatic update did not occured.
+So when you save your map with the new just-created Text Event, the data in the Editor memory is overwritten by the Map Editor's own data and thus that another Text Event refers to its Text by the old code which now points to something else.
+
+So, to avoid such situations, please close all editor dialogs when you modifying the Text Database.
+In the future I will probably make a mechanism that allows to overcome that issue, but for now you have to remeber it and try to avoid it.

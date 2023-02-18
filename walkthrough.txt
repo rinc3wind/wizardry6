@@ -1,0 +1,864 @@
+MOUNTAIN AREA:
+
+   a b c d e f g h i j k l m n o p q r s t u v w x y z
+01|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+02|#|#|#|#|       |#|#|       |#|#|#|#|#|#|#|#|#|#|#|#|
+03|#|#|     |#|#|   |#| |#|#| |#|   U = leads back to chasm & castle
+04|#|   |#|     |#|       |#|     |#|#|#|#|#|#|#|#|#|#|
+05|#| |#|   |#| |#|#|#|#|   |#| |#|#|#|#|#|#|#|#|#|#|#|
+06|#|#|   |#|   |#|     |#| |#|     |#|#|#|#|#|#|#|#|#|
+07|#:   |#|#|#|#|   |#| |#|   |#|#| |#|#|#|#|#|#|#|#|#| : = path from the
+08|#| |#|#|#|     |#|     |#|     |#|#|#|#|#|#|#|#|#|#|     pyramid
+09|#|         |#|#|   |#| |#|#|#|   |#|#|#|#|#|#|#|#|#|
+10|#|#| |#|#|#|     |#|#|     |#|#|       |#|#|    1 #| = Wizard's Cave
+11|#|#|   |#|#| |#|     |#|#|     |#|#|#|       |#|#|#|
+12|#|#|#|   |#|   |#|#|#|#|   |#|     |#|#| |#|#|#|#|#|
+13|#|#|#|#| |#|#|   |#|     |#|#|#|#|   |#|   |#|#|#|#|
+14|#|#|#|#|   |#|#|#|     |#|   |#| |#| |#|#|      2 #| = Mines
+15|#|#|#|#|#|         |#| |#|#|     |#|     |#|#| |#|#|
+16|#|#|#|#|#|#|#|#| |#|#|#|^|#|#|#| |#|#|#|   |#|   |#|
+17|#|#|#|#|#|#|#|#|#|#|#|#|   |#|#|     |#|#|   |#|#|#|
+18|#|#|   |#|#|#|#|#|#|#|#|#|     |#|#|t    |#|   |#|#| t = Troll Bridge
+19|#|   |#|#|  ^|#|#|#|#|#|#| |#| |#|#| |#| |#|#| |#|#|
+20|#| |#|#|   |#|#|#|#|#|#|^|#|#|   |#| |#|   |#|  3 #| = Mines
+21|#|   |#| |#|#|#| |#|#|   |#| |#|     |#|#| |#|#|#|#|
+22|#|#|     |#| |#|       |#|#|   |#|#|   |#| |#|  4 #| = Mines
+23|#|   |#|#|#|   |#|#|#|       |#|#| |#| |#|     |#|#|
+24|#| |#|#| |#| |#|#| |#|#|#| |#|#|   |#|   |#|#|#|#|#|
+25|#| |#|   |#|   |#|   |#|   |#|   |#|   |#|     |#|#|
+26|#|     |#|#|#|   |#| |#| |#|#| |#|#|#|#|#|#|#| |#|#|
+27|#|#|#|     |#|#| |#| |#|   |#|     |#|     |#|  5 #| = Mines
+28|#|   |#|#|   |#|     |#|#|     |#|     |#| |#| |#|#|
+29|#|#|  c /    |#|#| |#|#|   |#|#| |#|#|#|#|d|#| |#|#| d = drawbridge
+30|#|   |#|#|     |#|     |#|#|     |#|   |#|     |#|#| c = catapult
+31|#| |#|#|#|#|#|#|#| |#|       |#|#|   |#|#|#|#|#|#|#|
+32|#|   |#|#|#|       |#|#| |#|#|     |#|     |#|#|#|#|
+33|#|#|         |#|#|   |#|       |#|     |#|      6 #|
+34|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+   a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+Hitting the target will cause the pit east of the catapult to be filled in
+and allow you to explore further. Moving to location 19g on the Mountain
+Area map and you will find the thrid and last area where you can climb up
+the mountain. Again, save your game!
+     At the top of this area you will find an arch that leads into the home
+of the Gryns Twyns. They are a difficult encounter. If you find that you are
+not able to defeat them after several tries, return to the mines for further
+character development. After you have defeated the Twyns, rest and heal your
+party. Take the stairs up. Here you will find the Guardian of the Rock which
+you will need to defeat to get the first ruby eye. Cast Missile Shield and
+use Acid Splash/Bomb during combat. Once you have won the RUBY EYEBALL, do
+back down the stair and take the opening to the northeast. On this ledge you
+will find a closet with a button. The button will open a chute and the area
+leading to the PYRAMID.
+
+PATH TO PYRAMID:
+
+   a b c d e f g h i j k l m n
+01|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+02|#|#|#|#|#|#|#|#|#|#|#|#|
+03|#|#|#|#|#|#|#|#|#|#|     |#|
+04|#|#|#|#|#|#|#|#|#|   |#| |#|
+05|#|#|#|#|#|#|#|#|#| |#|   |#|
+06|#|    U|#|#|#|#|#|#|   |#|#|
+07|#|d|#|   |       :   |#|#|#| : = obstruction, use pick. This will open up
+08|#|   |__d| |#| |#| |#|#|#|       the path back to the Mountain Area map
+09|#|   d   d_|d  |#|         |     and to the castle.
+10|#|#|#|d  |   |#|#|#| |#|#|#|
+11|#|#|#| |#|  .|#|#|#|   |#|#| . = obstruction, use pick
+12|#|     |#|#| |#|#|#|#|   |#|
+13|#|S|#|#|#|#|         |#| |#| S = sand
+14|#|#|#|#|#|#|#|#|#|#| |#|   |
+15|#|#|#|#|#|#|#|#|#|#| |#|#|
+16|#|#|#|#|#|#|#|#|#|#|     |#|
+17|#|#|#|#|#|#|#|#|#|#|#|#|  C| = CHUTE from TWYN'S Mountain
+18|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+   a b c d e f g h i j k l m n
+
+     Use the MINER'S PICK at 11g and 7i. Move the stairs leading up at 6d.
+These stairs will lead to a short hall with more stairs leading up to Level
+1 of the Pyramid.
+
+PYRAMID:
+
+     There are lots of stairs in the Pyramid. As in the mines, you sometimes
+have to go up and down several in order to reach an area on the same level
+from which you started. Color coding the stairs can help reduce the
+confusion.
+
+PYRAMID LEVEL 1:
+
+   a b c d e f g h i j k l m       You enter this level of the Pyramid from
+01|#|#|#|#|#|#|#|#|#|#|#|#|#|      the stairs at 9h on this map.
+02|#| . |#|  _  |#|  _  .#|#|
+03|#|   |^|_  | |#|_  |d  |#|      Move to the "G" <9g> on this map. You
+04|#| |___  | |___  |U|_| |#|      will have to go up to level 2 and come
+05|#|  _  |U| |  $|U|  _  |#|      back down by other stairs to get here.
+06|#|#|#|_ d|_d___|  _|#|#|#|      The "G" represents the Gloop Sploch
+07|#|  _  | chest |D|#|   |#|      Monster. Defeat it to get some GLOOP.
+08|#| |#| |_______|#|U__| |#|
+09|#|   |__U|  G|D   ___  |#|      With the GLOOP, move to the large center
+10|#|#|_d | d___|U| |U|#|#|#|      room <with the word "chest"> going up and
+11|#| . d_| |#|  _| |__ . |#|      down stairs as needed. In this room you
+12|#|       |#|           |#|      will find a chest. As you approach it, it
+13|#|#|#|#|#|#|#|#|#|#|#|#|#|      jumps to the far side of the room. Use
+   a b c d e f g h i j k l m       the GLOOP on any of the east or west
+
+walls. Chase the chest again. It will get stuck in the GLOOP allowing you to
+finally catch it. Opening the chest reveals a BONE KEY.
+     Next move to the treasure at 5h. In this chest you will find a BAG.
+Fill the BAG with SAND that you found on the Path to the Pyramid.
+     At 4d and 3d you will find buttons on the wall. Push them.
+
+PYRAMID LEVEL 2:                         PYRAMID LEVEL 3:
+
+   a b c d e f g h i j k l m                a b c d e f g h i j k l m
+01|#|#|#|#|#|#|#|#|#|#|#|#|#|            01|#|#|#|#|#|#|#|#|#|#|#|#|#|
+02|#|#|#|#|#|#|#|#|#|#|#|#|#|            02|#|#|#|#|#|#|#|#|#|#|#|#|#|
+03|#|#| _#|  #|  _   _  |#|#|            03|#|#|#| .  _  |#| . |#|#|#|
+04|#|#| |dd_  | |  _|D| |#|#|            04|#|#|#|# dd^| |D|   |#|#|#|
+05|#|#|   |D|U|d|U|D|_  |#|#|            05|#|#|#| | |D| |_d_| |#|#|#|
+06|#|#|#|_d_|#|   |_  |#|#|#|            06|#|#|#|  _|_d_|U__g |#|#|#|
+07|#|#|  _d   |__s|#|_  |#|#|            07|#|#|#| |^|d_D|C|^|#|#|#|#|
+08|#|#| |#|___|U_____D| |#|#|            08|#|#|#| .d|_  |_dd. |#|#|#|
+09|#|#|   |D__  | d |   |#|#|            09|#|#|#|           |#|#|#|#|
+10|#|#|#|_  |#| |D| |D| |#|#|            10|#|#|#|#|#|#|#|#|#|#|#|#|#|
+11|#|#|               |#|#|#|            11|#|#|#|#|#|#|#|#|#|#|#|#|#|
+12|#|#|#|#|#|#|#|#|#|#|#|#|#|            12|#|#|#|#|#|#|#|#|#|#|#|#|#|
+13|#|#|#|#|#|#|#|#|#|#|#|#|#|            13|#|#|#|#|#|#|#|#|#|#|#|#|#|
+   a b c d e f g h i j k l m                a b c d e f g h i j k l m
+
+PYRAMID LEVEL 4:
+
+   a b c d e f g h i j k l m       Continue to explore the Pyramid, building
+01|#|#|#|#|#|#|#|#|#|#|#|#|#|      up your characters. Pushing buttons <"^"s
+02|#|#|#|#|#|#|#|#|#|#|#|#|#|      on the maps where every you find them.
+03|#|#|#|#|#|#|#|#|#|#|#|#|#|      When you feel ready to try something more
+04|#|#|#|#|         |#|#|#|#|      challenging, fill your BAG with SAND if
+05|#|#|#|#| |#| |#| |#|#|#|#|      you have not already done so and head for
+06             Q D| |#|#|#|#|      the stairs down at 7i on Pyramid Level 1
+07|#|#|#|#| |#| |#| |#|#|#|#|      map. This takes you to the Pharoh's Tomb.
+08|#|#|#|#|         |#|#|#|#|
+09|#|#|#|#|#|#|#|#|#|#|#|#|#|      You will not be able to open the gate on
+10|#|#|#|#|#|#|#|#|#|#|#|#|#|      Pyramid Level 3 until you have completed
+11|#|#|#|#|#|#|#|#|#|#|#|#|#|      the Pharoh's Tomb.
+12|#|#|#|#|#|#|#|#|#|#|#|#|#|
+13|#|#|#|#|#|#|#|#|#|#|#|#|#|
+   a b c d e f g h i j k l m
+
+PHAROH'S TOMB:
+
+   a b c d e f g h i j       ^ = button on wall
+01|#|#|#|#|#|#|#|#|#|#|      s = secret wall, disappears when correct button
+02|#|#|#|#|#|#|#^   |#|          is pushed.
+03|#|#|#|#|#|#^ s  d|#|
+04|#|#|#|#|#|#|#|#| |#|      The BONE KEY opens the gate to the Pharoh's
+05|#|#|#|#|#|#|#|#| |#|      Tomb. As you begin the walk down the long hall
+06|#|#|#|#|#|#|#|#| |#|      you will notice the pressure plates on the
+07|#|#|#|#|#|#|  ^  |#|      floor. Don't run down this hall. At 14f you
+08|#|#|#|#|#|#| |#|#|#|      will step on a pressure plate that will open
+09|#|#|#|       |#|#|#|      pits at locations 15f and 12f. Push the button
+10|#|#|#| |#|#|#|#|#|#|      at 13f to close these pits.
+11|#|#|#| |#|     |#|#|      At locations 15d, pushing the button on the
+12|#|#|#| |#| |#| |#|#|      wall will open the wall at 16c/d. Push the
+13|#|#|#| |#| ^#| |#|#|      button at 16c. Doing so prevents a giant ball
+14|#|#|#| |#| |#| |#|#|      ala Indiana Jones from chasing you down this
+15|#|#|#| ^#| |#| |#|#|      section of the hallway.
+16|#|#^ s     |#|g|#|#|      Continue down the hall to location 7h and push
+17|#|#|#|#|#|#|#| |U|#|      the button on the south wall. A pit will open
+18|#|#|#|#|#|#|#|   |#|      just behind you at 7g. Jump/move into this pit.
+19|#|#|#|#|#|#|#|#|#|#|      See map of PIT 1 below:
+   a b c d e f g h i j
+
+PIT 1:         PIT 2:
+   a b c d e     h i j k l m n o p q     PIT 1 is a small pit with buttons
+01|#|#|#|#|#|   |#|#|#|#|#|#|#|#|#|#|    on either end. Push/SEARCH the
+02|#|#|#|#|#|   |#|#|#|#|#|#|  _  |#|    button at the west end <3b> to
+03|#^   |#|#|   |#|#^ ^        _| |#|    move to location 10l in PIT 2.
+04|#|#|   ^#|   |#|#|#|g|#|#|     |#|
+05|#|#|#|#|#|   |#|#|     |#|#|#|#|#|    In PIT 2 move to the button at
+06|#|#|#|#|#|   |#|^|     |#|#|#|#|#|    7k and push it which opens the gate
+07|#|#|#|#|#|   |#|d|#| ^#|#|#|#|#|#|    at 4k and fills in the pit at 9j
+08|#|#|#|#|#|   |#| |#| |#|#|#|#|#|#|    <"/" on the map>. Go to 6i and push
+09|#|#|#|#|#|   |#|  /    |#|#|#|#|#|    the button on the north wall. This
+10|#|#|#|#|#|   |#|#|#|#|  /|#|#|#|#|    deactivates an arrow trap. Move to
+11|#|#|#|#|#|   |#|#|#|#|#|#|#|#|#|#|    3k and push the button on the west
+   a b c d e   g h i j k l m n o p q     wall. Enter the small room just
+
+opened and push the button at 3j. Now head east down the hall. You will have
+a major encounter at 3n with AmenTutButt and his friends, so save your game
+BEFORE you reach them. Once you have defeated Amen, you can enter the alcove
+<3o> where the IDOL is kept. SAVE YOUR GAME! Once your game is saved, you
+can attempt to switch the BAG OF SAND for the IDOL. This does not always
+work successfully. If it didn't for you, restore and try again.
+     Once you have the IDOL, retrace your steps and jump in the pit at 10m.
+This places you back in PIT 1. This time push the button on the east wall
+which in turn returns you to 7h on the PHAROH'S TOMB MAP. Continue east,
+north down the hall on that map and SEARCH for the button at 2h. Now push
+the button at 3g which will allow you to return to the stairs back up to the
+pyramid.
+     Once back in the PYRAMID, make your way to the GATE on LEVEL 3. USE the
+IDOL to open the gate. Climbing the stairs at 6h on the Pyramid Level 3 map
+you will meet the Queen of the Amazulu on Level 4. She will ask you if you
+have come to take the "rock" <another RUBY EYEBALL>, answer "NO". Give the
+Queen a gift of mimimal value, healing potion, or something of similar
+value. After you have finished talking with the Queen, the High Priestess
+will ask if you wish to trade. She has many books and potions for sale, some
+of which may prove useful to you inspite of their realatively high price.
+She also sells some FOOT POWDER. BUY SOME!
+     After you finish talking to the High Priestess, USE THE FOOT POWDER and
+continue WEST. <without the use of the foot powder this walk would burn you.
+Levitate will also prevent this, but unless you are capable of casting it at
+a high level, you could still sustain lots of damage>. At the end of the
+west ramp you will encounter MAU-MU-MU. Cast any anti fire spells you have
+early in this encounter. Defeat Mau-mu-mu and you will gain the second RUBY
+EYEBALL.
+     You can, even after taking the RUBY EYEBALL, revisit the Queen and her
+High Priestess repeatedly, or you can fight them for the experience points
+and a very deadly Spear of Death <it does 1d5+4 damage, adds +1 to Thrust,
+and poisons those it hits>.
+     You have now completed the Pyramid and the Mountain Area and it is time
+to return to the CASTLE BASEMENT 2.
+
+CASTLE:
+BASEMENT 2:
+   a b c d e f g h i j k l m n o p q r   Using the WIZARD'S RING on the gate
+01|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|  at 6j you will be able to enter the
+02|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|  Wizard's Lair. The Lair is guarded
+03|#|#|#|#|#s   d |$   $|  $  |#|#|#|#|  by a Demon Cat from Hell. Cast
+04|#|#|#|#|#|   |^s     |     |#|#|#|#|  fire protections spells and defeat
+05|#|#|     |#|#|#|$   $|_ 1 _|     |#|  this guardian. There are 4 chests
+06|#|#| |#|U|#|#|#|#|g|#|#|g|#|D|#|d|#|  in this room. One contains books,
+07|#|#|                             |#|  another potions, a third scrolls,
+08|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|  and the fourth the WIZARD'S LOG and
+09|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|  the SPIRE KEY.
+10|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|  Search the west wall to open a
+
+secret door behind which you will find the Stave of Moons <4h> which does
+2d4 damage, +1 Bash and Sleep. Push the button on the North wall to gain
+access to another room. In the southwest corner of this room you will find
+still more treasure including a Ruby Talisman which can increase
+Intelligence. On the north side of the room you will find laboratory
+chemicals. Be sure your party is healthy before messing around with the
+chemicals. You should not find it very difficult to cause an explosion. This
+explosion will open the wall at 3e which leads back to the Wizard's Cave in
+the Mountain Area.
+     In REVIEW mode, USE the WIZARD'S LOG. You will find that something is
+locked up in the Spire. Move to the stairs at 9l on the CASTLE LEVEL 1 MAP
+and stair up. On the next level you will find a gate which is opened by the
+SPIRE KEY. Continue up to the top where you will find a door which can be
+opened by the SPADE KEY. In this room you will meet a spirit who will tell
+his tale of woe. At the end of this tale you will get the HORN OF SOULS.
+Return to the CASTLE BASEMENT 2 and move to the end of the hall and place
+the RUBY EYEBALLS in the door.
+     The door is now opened and passing through you will go down a set of
+stairs and find yourself on the Castle Pier on the RIVER STYX.
+
+
+RIVER STYX:
+     The RIVER STYX is a huge area that wraps upon itself <that is: if you
+travel to the northwest <or southeast> long enough you will eventually
+return to where you begain>. This area is really much to large to map
+conveniently in ascii form so I will give you a basic lay out instead:
+
+           _            ___________
+         _|                        |__
+       _|          ______             |
+castle|            |isle |            |
+pier  |           _| of  |_           |
+------           |         |        __|
+|                |  the    |       |$  |
+|                |  dead   |       |_| |
+|                -----------           |
+|                                    __|
+|_______                            |
+stairs___                           |
+up to|   |                        __|
+swamp    |                      _|
+         |__                   |
+           |X        ____      |
+           |_       |    |     |
+             |       Keep|     |
+             |_                |
+               |_              |
+                 |_            |
+                   |__         |     ___
+                      |_       |____$_  |
+                        |           |_| |
+                   isle of              |
+                   the lost           __|
+                       _|            _|
+                     _|            _|_
+                    |          _  |_| |
+                    |         | |___  |
+                    |         |_____| |
+                    |               |$|
+                   _|          sirens |
+                  |                 __|
+                  |             ___|
+                  |             |
+                  |             |
+               bottle           |
+               oracle___        |
+                       |         isle of
+                       |         the
+                       |         damned
+                      _|         |______
+                      |                |
+                      |                |
+                      |                |
+                      |_               |
+                        |              |
+                    hook &             |
+                    line               |__________
+                        _|                        |__
+                      _|          ______             |
+               castle|            |isle |            |
+               pier  |           _| of  |_           |
+               ------           |         |        __|
+               |                |  the    |       |$  |
+               |                |  dead   |       |_| |
+               |                -----------           |
+
+
+     On the CASTLE PIER, you will find a circle in the south center section
+of the pier. Stand on this circle and USE the HORN OF SOULS. Charron, the
+ferryman, will appear. He will ask if you want passage and if you have any
+ashes for him. Passage cost 500gp. You have no ashes at this point, so pay
+for passage. Charron will take you to the ISLE OF THE DAMNED.
+
+ISLE OF THE DAMNED LEVEL 1:
+   a b c d e f g       g = gate                F = Fountain
+01|W|W|#|#|#|#|#|      W = water               D = Stairs down
+02|W|W|#|#|#|#|#|      O = circle for summoning Charron
+03|W|Wr   |   |#|      r = raft
+04|W|W|g.g|g.g|#|
+05|W|W|    ___|#|      Move to 7d where you will find the KEY OF THE DAMNED
+06|W|   . |  F|#|      and the BOOK OF THE DAMNED. Move to the gate at 10d
+07|W|O  .$g  D|#|      and open it with the KEY OF THE DAMNED. Save your
+08|W|     |__F|#|      game. Move to 11d where you will have an encounter
+09|W|W|       |#|      with Minos. Defeat him and you will gain, among some
+10|W|W|g.g|g.g|#|      other interesting items, the KEY OF MINOS and a.
+11|W|Wg  $|  g|#|      CYLINDER OF ASH (1).
+12|W|W|W|W|W|W|#|
+   a b c d e f g       Open the gate at 7d so that you have access to the
+
+FOUNTAINS inside. The fountain on the North restores hits and stamina. The
+fountain on the South restores magic points. Use these fountains as often as
+you need. You can now open up the rest of the gates on this map with the KEY
+OF THE DAMNED. In each of the small rooms you will have an encounter. Use
+SILENCE on these monsters! You will find another CYLINDER OF ASH (2). At 3c
+you will find a raft. Do NOT use it until you have explored ISLE OF THE
+DAMNED LEVEL 2.
+
+ISLE OF THE DAMNED LEVEL 2:
+
+   a b c d e f g h i j       From the stairs take the hall all the way east
+01|#|#|#|#|#|#|#|#|#|#|      to the end. You will have an encounter with
+02|#|#|             |#|      undead monsters. After defeating them, you will
+03|#|#| |*| |*| |*| |#|      be able to get the TOMB KEY from the chest.
+04|#|#|             |#|      Open the gates at 8g and 9e with the TOMB KEY.
+05|#|#| |*| |*| |*| |#|
+06|#|#|             |#|      Explore each of the tombs <* on the map>. At
+07|#|#| |*| |*| |*| |#|      some of these tombs you will have encounters
+08|#|#|________g____|#|      with undead when you search the bones. SILENCE
+09|#|U_____g________$#|      is a useful spell in these encounters though
+10|#|#|             |#|      not always effective. Save your game before
+11|#|#| |*| |*| |*| |#|      you search any of these tombs just in case.
+12|#|#|             |#|
+13|#|#| |*| |*| |*| |#|      In the tomb furthest to the northeast you will
+14|#|#|             |#|      find the BOOK OF THE SIRENS. In REVIEW mode
+15|#|#| |*| |*| |*| |#|      USE this book. Write down the last lines of
+16|#|#|             |#|      the Siren's song! After you have completely
+17|#|#|#|#|#|#|#|#|#|#|      explored this level, return to Level 1 and go
+   a b c d e f g h i j       to the raft at 3c on that map.
+
+     Take the raft. It will take you to the Siren's Cove. Soon the sirens
+will gather around you and start singing the song you read in the BOOK OF
+THE SIRENS. When they reach the last line, they will ask you to fill in the
+words. Type "Tis madness makes us free". Correctly completing the SIren's
+Song will get you the WATER WINGS and the sirens will leave. You can take
+the raft back to the isle of the dead. Equip one of your characters with the
+WATER WINGS. While facing water, USE the WATER WINGS. You will now be able
+to "walk" anywhere on the water and begin your exploration of the River
+Styx.
+
+NOTE: Once you have the WATER WINGS you are free to explore all the areas of
+the River Styx with the exception of the Isle of the Dead and the Swamp.
+There is NO particular order in which you should explore though you may find
+some areas more difficult to handle than others. Use the fountains on the
+Isle of the Damned as your "home base" for these explorations. Do follow the
+walls carefully so that you locate the various cubbyholes in which treasure
+may be lurking. Making your own map of this area is advisable.
+
+HOOK & LINE:
+     Southwest of the Isle of the Damned is square upon which you can land
+and a door. Behind the door is a small room with a chest. In the chest is a
+HOOK and a LINE and a CORK BOBBER. MERGE the hook and line into a HOOK &
+LINE. For what to do with the HOOK & LINE see "X MARKS THE SPOT" below. For
+what to do with the CORK BOBBER, see BOTTLE ORACLE below.
+
+LOST & FOUND:
+     Northwest of the Isle of the Damned is the Lost and Found. Search the
+northwest wall to find a button opening a secret passage. You will find a
+message scrawled on the wall saying "Lost at Sea DJ Locker Red X 3e 1n" and
+a door. Open the door and then return to the main room and search the
+southwest corner to locate the KEY OF THE LOST. This key will open the gate
+which was beyond the door. Beyond the gate is a chest containing some random
+treasures and a CYLINDER OF ASH (3).
+
+THE KEEP:
+     North of the Lost and Found is the Keep. Mai Lai will tell you that the
+Keep is a storage facility. You can trade with her and she has some
+excellent items for sale. If you do not find what you want in her inventory,
+exit and re-enter. Her inventory will change every time providing you with a
+wide selection of useful, tempting and expensive equipment. Beyond her is a
+locked door which you will not be able to open until you attempt to claim
+the hookah pipe <see SWAMP below for details>. Word of warning: Mai Lai will
+run off when you try to reclaim the hookah pipe and she will NOT return so
+do not reclaim the pipe until you are certain that you no longer wish to
+trade with Mai Lai.
+
+X MARKS THE SPOT:
+     From the Keep move to the west wall and move north until you locate the
+Red X. Recalling the message on the wall of the Lost & Found, go 3 squares
+east and 1 north. USE the HOOK & LINE. You will snag a locker in which you
+will find a Linx Ring, a Wand of Ghosts and the EAST EXIT KEY.
+
+SWAMP:
+     Move to the west wall and continue north, following the wall, until you
+find a set of stairs leading up. At the top of the stairs there is a gate
+which you can open with the EAST EXIT KEY.
+
+   a b c d e f g h i j k l m n o p q r   C = caterpillar
+01|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+02|#|#|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|W|  The encounter in the swamp can be
+03|#|#|W|     |W|W|#|               |W|  difficult. Casting Silence will be
+04|#|#|W| |#|     |W| |W|W|#|#|W|W| |W|  very helpful as will Missile
+05|#|#|#| |W|W|W| |W|           |#| |W|  Shield. If the encounters seem too
+06|#|#|   |W|     |#|W| |#| |#| |W| |W|  difficult, return to the River Styx
+07|#|   |W|#| |W|#|       |#|   |#| |W|  and build up your characters some
+08|#|#|W|W|   |W|W| |W|W|#|   |#|#| |W|  more.
+09|#|#|W|   |W|     |W|#|   |W|#|   |W|
+10|#|#|W| |W|#|W|W| |W|W| |#|W|#|   |W|  Exploring this area thoroughly you
+11|#|#|W|           |#|W| |#|W|#|   |W|  will find the Caterpillar <17o>. He
+12|#|#|W|W|W|   |W|W| |W| |W|W|W| |#|W|  has some interesting items for sale
+13|#|#|#|#|#|#| |#|W|         |W|W|#|W|  which you might wish to buy. Do buy
+14|#|#|#|D____g |W|W|W|W|W|#| |#|W|W|W|  some INCENSE from him for use in
+15|#|#|#|#|W|   |W|W|#|W|W|W|     |W|W|  the Isle of the Dead. Talk to him
+16|#|#|#|#|W|W|   |#| |#|W|#|     |W|W|  about his pipe. You'll soon gather
+17|#|#|#|#|#|W|W|       |W|W|#|C|W|W|W|  that he left it at the Keep and say
+18|#|#|#|#|#|#|W|W|W|W|   |W|W|W|W|W|W|  the key word to use there is
+19|#|#|#|#|#|#|W|W|W|W|W|W|W|W|W|W|W|W|  "reclamation". Ask the caterpillar
+   a b c d e f g h i j k l m n o p q r   about "claim number" and he will
+
+recall that he has forgotten the number but that it can be learned by using
+the BOTTLE ORACLE. He will give you instructions on how to use the Bottle
+Oracle and a MESSAGE. MERGE the message with the wine bottle <you got it way
+back in the castle> and then MERGE the message in the bottle with the cork
+bobber. Return to the River Styx and head for the Bottle Oracle.
+
+BOTTLE ORACLE:
+     At the location of the Bottle Oracle USE the message in the bottle with
+the cork stopper and watch it float away. Now head for the LOST & FOUND. On
+the shore of the L&F you will find a bottle containing the ANSWER, i.e. the
+claim number which happens to be 38-23-36.
+
+HOOKAH PIPE:
+     You may claim the hookah pipe from the keep anytime you have pieced
+together the information described in the sections on the SWAMP and the
+BOTTLE ORACLE by telling Mai Lai at the Keep that you want to make a
+"reclamation". As mentioned before, reclaiming the pipe will result in Mai
+Lai running off never to be seen again. Once you have the pipe, you GIVE it
+to the Caterpillar. He will ask you if you want to "get small", say yes and
+you will get some RED MUSHROOMS. The caterpillar will then disappear never
+to be seen again. I recommend that you save reclaiming the pipe and giving
+it to the caterpillar until after you have completely explored the Isle of
+the Dead.
+
+ISLE OF THE DEAD:
+     Return to the circle on either the Castle Pier or the Isle of the
+Damned. SAVE YOUR GAME. Use the Horn of Souls to call Charron. When he asks
+you if you have any ashes for him say yes. GIVE Charron the ashes. One
+cylinder of ashes will get you 500gp. Another cylinder of ashes will result
+in stat increases <generally 2 per character>. The third cylinder of ash
+Charron will say you must return yourselves. He will give you the KEY OF THE
+DEAD. Go to the entrance to the Isle of the Dead <north side of the isle>
+and open the gate with the KEY OF THE DEAD.
+
+ISLE OF THE DEAD Level 1:
+
+   a b c d e f g h i   There is not much of anything on this level but you
+01|W|W|W|W|W|W|W|W|W|  will have an encounter at 7e which will give you a
+02|W|W|W|W| |W|W|W|W|  taste of things to come. If you find that this fight
+03|W|W|W|d|g|d|W|W|W|  is killing your characters easily you may wish to
+04|W|W|  _____  |W|W|  develop them further before trying this again.
+05|W|W| |#|D|#| |W|W|
+06|W|W| |     | |W|W|  Spells of particular usefullness in this area are
+07|W|   |     |   |W|  dispell undead and silence.
+08|W| |#|#| |#|#| |W|
+09|W|             |W|  When you feel you are really ready, head down the
+10|W|W|         |W|W|  stairs at 5e. You will be in a hall with another set
+11|W|W|W|     |W|W|W|  of stairs leading down to level 2.
+12|W|W|W|W|W|W|W|W|W|
+   a b c d e f g h i
+
+ISLE OF THE DEAD Level 2:
+
+   a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J
+01|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+02|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|  3  |#|#|#|#|#|#|#|#|#|
+03|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|     |#|     |#|     |#|#|#|#|#|
+04|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|         |#| |#|         |#|#|#|#|
+05|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|   |#|             |#|  $|#|#|#|#|
+06|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|         |#|#|#|         |#|#|#|#|
+07|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|     |#|     |#|     |#|#|#|#|#|
+08|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|   |#| |#|    _    |#| |#|   |#|#|#|
+09|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#| 2 g   |#|   | |   |#|   g 4 |#|#|#|
+10|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|   |#| |#|         |#|_|#|^  |#|#|#|
+11|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|  s  |#|     |#|     |#|s|#|#|#|
+12|#|#|#| | | | |#|#|#|#|#|#|#|#|#|#|#|#|        $|#| |#|         | |#|#|#|
+13|#|#|_   ___   _|_   _______________g     |#|   |#| g     |#|   | |#|#|#|
+14|#|#|_  |#|#|  _|_  |#| | | | | |#|#|#|         |#|g|#|         | |#|#|#|
+15|#|#|_   _|_   _|_               _|#|#|#|  s  |#|     |#|     |#|s|#|#|#|
+16|#|#|_   _|_   _|#|_|_|_|_|_|#|  _|#|   |#| |#|         |#|s|#|   |#|#|#|
+17|#|#|_   _|_  |#| | | | | | |#|  _|#| 1 g   |#|   |_|   |#|   g 5 |#|#|#|
+18|#|#|_   _|                       |#|   |#| |#|         |#| |#|^  |#|#|#|
+19|#|#|_   _|#| | | | | | | | | | |#|#|#|#|     |#|     |#|     |#|#|#|#|#|
+20|#|#|_   _|#|#|#|#|#|#|#|#|#|#|#|#|#|#|         |#|F|#|         |#|#|#|#|
+21|#|#|_ |#|  | | |#|#|#|#|#|#|#|#|#|#|#|   |#|             |#|   |#|#|#|#|
+22|#|#|_           _|#|#|#|#|#|#|#|#|#|#|$        |#|g|#|         |#|#|#|#|
+23|#|#|#|_|_|_|#|  _|#|#|#|#|#|#|#|#|#|#|#|     |#|^    |#|     |#|#|#|#|#|
+24|#|  __ |#|#|_   _|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|  6  |#|#|#|#|#|#|#|#|#|
+25|#| |     |#|_   _|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+26|#| | |A| |#|#|  _|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+27|#|U|     g      _|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+28|#|#|#|#|#| | | |#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+29|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+   a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J
+
+     Coming down the stairs you will find yourself at location 27b on the
+map above. Follow the short hall around and you will see ahead of you a
+small altar. USE the CYLINDER OF ASH at the altar. If you purchased it, USE
+INCENSE at the altar. The use of incense will neutralize some traps that you
+would otherwise encounter later on this level. Having used the ashes, the
+gate at 27e will now be open and you are ready to explore the Hall of the
+Dead.
+     This is a difficult area. If the encounters are too difficult for your
+group at this time, return to the River Styx and build them up. Don't try to
+do too much at a time and return to the fountains on the Isle of the Damned
+as often as you need. Some of the cubbyholes will have encounters, but not
+all of them <fortunately>. There are also a few encounters in the hallway.
+Continue exploring, fighting, returning to the Isle of the Damned, saving
+your game until you reach the cubbyhole at 16m. Save your game before
+entering this cubbyhole. The encounter here is very difficult but will get
+you the SKELETON KEY.
+     Once you have successfully obtained the SKELETON KEY, continue
+exploring the Hall of the Dead until you reach the gate at 13r which you can
+open with the SKELETON KEY. There is an encounter just beyond the gate, so
+save your game!
+     Once beyond the gate, you can explore the room <fight> and open the
+chest at 12x. In it, you will find the KEY OF THE DROW. Next search for the
+secret door on the south wall of this room <15v>. Head for the Fountain that
+is at location 20z. This fountain restores hits, stamina and magic and will
+become your new "home base" while exploring the rest of this area. Return
+here often and save your game, especially after the encounters in the
+numbered rooms.
+
+ROOM 1:    Drow
+     This is the tomb of Robin Windmarne, Highlander Drow, Guardian of the
+1st Order. When you enter this tomb, you will have an encounter with Robin
+and many of her friends. This will be, as will be all the other encounters
+in the numbered rooms, a difficult fight. Defeating her, you will gain an
+Elven Bow, Peacemaker Arrows, Chamail Doublet, Chamail Pants and a Forest
+Cape.
+     Open the chest at 22t to gain the KEY OF KNIGHTS. Head north and find
+the secret passage on the north side of the room at 11v.
+
+ROOM 2:    Knight
+     This is the tomb of Sir Geoffrey Clayton, the Black Knight, Guardian of
+the 2nd Order. When you defeat him and his companions you will gain a sword
+called The Avenger, Ebony Plate both upper and lower, and an Ebony Heaume.
+     From the knights tomb, head for and open the chest at 5F to obtain the
+KEY OF THE VALKYRIES.
+
+ROOM 3:    Bane King
+     You can tackle this room now, or wait until you have completed rooms 4
+and 5. You will encounter the Bane King <a vampire> and have to fight him.
+You will not win this battle but hopefully, you will not die either. The
+King will, after a few rounds of battle, disappear. It is likely that some
+of your party will be "insane" or hypnotized after this encounter. If you
+have the spell Sane Mind, use it <perhaps repeatedly>. The insanity will
+eventually wear off. Searching the north wall of this room you will find a
+chest that contains the KEY OF QUEENS. Don't try to do too much until your
+party is all in sane mind again.
+
+ROOM 4:    Valkyrie
+     This is the tomb of Brigerd Danswolten, High Maenad of Rose, Guardian
+of the 3rd Order. Defeating her and her companions will gain you Maenad's
+Lance, Mantis Boots and Gloves. Search the southwest corner of this room to
+locate a button which will open the wall at 10G. The corridor now opened
+will lead you to room 5.
+
+Room 5:    Samurai
+     You will find a button on the south most wall of the hall from the
+Valkyrie tomb. Pushing the button will gain you access to the tomb of Lord
+Haiyato Daikuta, Yojimbo Kaishakunin, Guardian of the 4th Order. You thought
+the encounters with the Drow, the Knight and the Valkyrie were tough?? This
+is what tough is about! You will confront not only Daikuta but samurias
+casting spells and some deadly ninjas. Expect to replay this battle often
+before you finally are able to defeat them. When you finally do win you will
+gain some excellent weapons and armor specific for samurai class, including
+a Wakizashi+1. Unfortunately, I forgot to write down the other items. :(
+
+Room 6:    Queen
+     This is the tomb of the Queen, Goddess of Aram who died the year of the
+snake. Armed? Ready? Relax! There is no battle in this tomb. Instead the
+spirit of the dead Queen will come and tell you a long tale some of which
+you should not believe whole heartedly. You will gain the SILVER CROSS and
+the KEY OF EVIL from the Queen. Search the northwest corner of the room and
+push the button which will open the wall at 16D. Give the SILVER CROSS to
+the first character in your group!
+
+     This is a good time to change the professions of a couple of characters
+and then spend some time wandering around this area building them up in
+levels before going on. It is also a good time to take a good look at your
+weapons and armor and see that all characters are as well equipped as
+possible.
+     If you have not returned the Hookah to the Caterpillar yet, do so now
+and get the RED MUSHROOMS from him.
+
+SAVE YOUR GAME. BACKUP THE SAVED GAME TO ANOTHER DISK OR DIRECTORY!
+
+     The KEY OF EVIL will open the gate at 13A. You may wish to save you
+game at this point and to make back up copies of those saves to another disk
+or directory. SOME OF THE ALTERNATE ENDINGS OF THE GAME DEPEND ON WHAT YOU
+WILL DO NEXT SO HAVEING YOU GAME SAVED AND BACKED UP AT THIS POINT IS AN
+ADVANTAGE. ALTERNATE ENDINGS WILL BE DISCUSSED AT THE END OF THIS WALKTHRU.
+Another good reason to backup your save game at this point is that once you
+go beyond this point, you will NOT be able to get back to any of the areas
+with which you have become familiar. If you proceed and find that the next
+area is too difficult for your party you'd be up the creek without a paddle
+if not for the backup of your saved game.
+
+     Having saved your game, you are now ready to explore the remaining
+rooms of this area. Opening the gate at 13A, move to the altar at 9z. You
+will confront Rebecca here and regardless of what you say to her, she is
+going to hypnotize your group and lead them south to 17z where you will meet
+the Bane King again. After a brief talk, the King will decide to drink your
+blood. The SILVER CROSS will repel him, so it is important that the first
+member in your party have the cross. The party will black out, have a vision
+and awaken in a Jail.
+
+JAIL:
+     Once you wake up you will find yourself in a small room, with a gate, a
+fountain <poison> and seemingly no way out. Explore the corners of this room
+and you will find some mall cracks. USE the RED MUSHROOMS and shades of
+Lewis Carol, you will begin shrinking, running through the cracks and
+emerge in a small room on the far side. Exiting you will find a hall leading
+west and north. There are numerous doors down the north corridor but nothing
+of importance. Heading west you will come to stairs leading to the Forest
+Area.
+
+FOREST AREA:
+
+   a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J
+01|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|TEMPLE#|#|#|#|#|#|#|#|#|W|W|W|#|#|#|#|#|
+02|#|#|#|#|#|#|#|#|#|#|#|#|#|#|W|#|D|g|D|#|W|W|W|W|W|#|#|W|     |#|#|#|#|#|
+03|#|#|#|#|#|#|W|W|#|#|#|#|#|#|   . . . .         |W|#|W|W| |#| |#|#|#|#|#|
+04|#|#|#|#|#|D|   |#|   |#|W|W|               |#|           |#|     |#|#|#|
+05|#|#|#|#|W| | |#|   |#|W|                 |W|W|#|W|W|#| |#| |#|#| |#|#|#|
+06|#|#|W|       |W|#| |W|   |#|#|#|#|       |W|#|       |#|W|       |#|#|#|
+07|W|W|W|W|#| |#|W|W| |W| |#|       |#|W|W|#|     |W|W| |W|W|W| |W|#|#|#|#|
+08|W|a|W|W|       |#|     |W| |W|#| s$|#|W|   |#|W|W|W|R|W|     |W|#|#|#|#|
+09|W|   |W|W|W|#| |#| |#|#|W| |W|   |#|       |W|   |#|- - -|#|#|#|#|#|#|#|
+10|W|d _|W|W|     |W|     |#| |#| |#|   |W|#| |W| |#|#|-|#|- - - -|-|#|#|#|
+11|W| d_|W|   |#|W| |#|W| |#| |#|     |W|     |#|      -|#|-|#|-|#|-|#|#|#|
+12|W|dd_|W|   |W|   |#|         |W|W|W|   |#|W|#|W| |#|#|#|-|#|#|- -|#|#|#|
+13|W| d       |#|       |#|W|#|   |W|W|#|       |W| |#|#|#|- -|#|-|#|#|#|#|
+14|W| |#|W|W| |#|_|#|#| |W|W|W|W| |#| |W|W|#|#| |#| |#|- -|#|#|#|-|#|#|#|#|
+15|W| |W|W|#|           |W|       |W|   |W|W|#| |#| |#|#|- - - - -|#|#|#|#|
+16|#|#|#|#|#|#|#| |#|W|W|#| |W|W|W| |#|   |#|#|      - -|#|-|#|- - -|#|#|#|
+17|#|#|#|W| |W|W| |W|       |W|$    |#|#|   |#|#|- -|#|-|#|-|#|#|#|-|#|#|#|
+18|#|#|#|#| |W|#| |W| |W|W|W|#|W|W|    -|#|- - - -|#|#|-|#|- - -|#|#|#|#|#|
+19|#|W|W|   |#|   |#| |#|#|W|W|W|W|W|#|- - -|#|#|#|- - -|#|#|#|-|#|#|#|#|#|
+20|#|W|   |#| |#| |W|       |W|f|W|W|#|- -|#|- - - -|#|- - - - -|#|#|#|#|#|
+21|#|W|W|         |#|W|W|#|     |W|W|#|#|-|#|-|#|#|- -|#|-|#|#|#|#|#|#|#|#|
+22|#|#|#|#|   |#|#|W|#|#|#|#|#|W|W|#|- - -|#|- - -|#|- - -|#|     |#|#|#|#|
+23|#|#|#|#|#|   |W|W|#|#|#|#|#|W|W|  - -|#|- -|#|-|#|#|#|#| delphi|#|#|#|#|
+24|#|#|#|#|_    |W|#|#|#|#|#|#|#|W|W|#|- - -|#|#|- - - - - -|#|#|#|#|#|#|#|
+25|#|#|#|#|#g |W|W|#|#|#|#|#|#|#|#|W|W|W|W|W|W|W|W|W|W|W|W|W|#|#|#|#|#|#|#|
+26|#|#|#|#|#|W|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+   a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J
+
+a = altar  g = gate    - = dark forest   R = Rock of Truth
+D = stairs down        d = door          W = water
+f = Fairy Queen Saeren
+
+     The first place to visit in this large area is the .5 ship <squares 8-
+15b & 9-13c>. You will have several encounters getting there and once on
+board. If they are too difficult for your party, you may wish to consider
+restoring your game to back on the Isle of the Dead. If you are ready for
+this area, SEARCH 8b <"a" on the map>. At this make shift altar, you will
+find HOLY STAKES of wood. You will need them later.
+     From the ship head to 8q and SEARCH to open a tomb of a monk. SEARCH
+the tomb to find 3 h2o+, 1 jade figurine and haiya bo. Save the h2o+ for the
+temple <see below>.
+     At location 8A <"R" on the map> you will find the Rock of Truth. USE
+the MINER'S PICK to break off ROCKS OF REFLECTION. These you will also need
+later in the temple.
+     Start exploring the Dark Forest <"-" on the map> and move to 17o where
+you will find a treasure chest. Open the chest to find a TINKERBELL. You can
+continue to explore the dark forest and even visit the Delphi at this time,
+but you will not know how to respond to his questions.
+
+FAIRY QUEEN:
+     Heading to 20o you will see glimpses of fairies who always stay at a
+safe distance. When you reach 20o USE the TINKERBELL. Queen Saeren of the
+Fairies will come to talk and trade with you. Ask her about the DELPHI. Ask
+her how to talk to the DELPHI and she will tell you the answers to the
+Delphi's questions.
+     The queen has a number of interesting items for sale. I recommend that
+you invest heavily in Magic Cookies <restore magic points>, Golden Rods
+<healing> and Stamina potions. You will need to trade with the Queen, leave,
+use the bell and retrade often to really stock up on these items. As long as
+your party can carry the weight of what you buy, buy a lot. When you visit
+the Delphi and answer his questions correctly, he is going to take all your
+money, so spend it now while you have the chance.
+
+DELPHI:
+     After stocking up with the fairies, go see the DELPHI at 23E. He will
+ask you who you are. Reply: WE ARE FASCINATION  He will ask you what you
+want, reply: WE SEEK DIVINATION   He will ask if you will pay, answer YES.
+He will take your money and show you a vision in which you will first see
+Xorphitus and the Bane King. Pay CLOSE attention to this vision as it
+contains clues on how to defeat them. Delphi will then give you the STAFF OF
+ARAM.
+     You are now ready to head for the Temple.
+
+TEMPLE:
+     The temple is located on the north center side of the map at locations
+3qrs. If you take the stairs down you will find gates to jail cells and
+little else. At 3 r there is a gate for which you have no key. To gain
+access to the Temple, have your first character EQUIP the GOATS HEAD MASK.
+The temple guards will believe that you are a member and open the gate.
+UNEQUIP the mask as it is cursed and you will not need it anymore.
+     Save your game in case you find that the temple is too difficult at
+this time.
+
+   a b c d e f g h i j k l m n o p q r s t u v       You enter the temple
+01|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|      at location 28g on this
+02|#|#|#|#|#|#|#|g    |#|#|#|#|#|#|#|#|#|#|#|#|      map. What you will see
+03|#|#|#|#|#|     |#| |#|#|#|#|#|#|#|#|#|#|#|#|      will not exactly match
+04|#|#|#|#|#|     |#| |#|#|#|#|#|#|#|#|#|#|#|#|      what is on this map but
+05|#|#|#|#|#|     |#| |#|#|#|#|#|#|#|#|#|#|#|#|      the differences will be
+06|#|#|#|#|#|#|g|#|#| |#|#|#|#|#|#|#|#|#|#|#|#|      explained soon.
+07|#|#|#|#|#|#|s|#|#| |#|#|#|#|#|#|#|#|#|#|#|#|
+08|#|#|#|#|#| B D |#| |#|#|#|#|#|#|#|#|#|#|#|#|      Continuing north you
+09|#|#|#|#|#|  d  |#| |#|#|#|#|#|#|#|#|#|#|#|#|      will come to the end of
+10|#|#|#|#|#|#|s|#|#|             |#|       |#|      the ramp and meet
+11|#|#|#|#|#|     |#|#|#|#|#|#|#| |#| |#|#| |#|      Xorphitus. He'll dis-
+12|#|#|#|#|#| |P| |#|#|#|         |#| |#|#| |#|      appear shorty. EQUIP
+13|#|#|#|#|#|     |#|#|#| |#|#|#|#|#| |#|#| |#|      the STAFF OF ARAM! You
+14|#|#|#|#|#|#| |#|#|#|#| |#|#|#|#|#| |#|#| |#|      will now be able to
+15|#|#|#|#|#|#| |#|#|#|#| |#|#|       |#|#| |#|      walk across the pit at
+16|#|#|#|#|#|#| |#|#|#|#| |#|#| |#|#|#|#|#| |#|      24g. Don't try to cross
+17|#|#|#|#|#|#|g|#|#|#|#|       |#|#|#|#|#|^|#|      any of the other pits
+18|#|#|#|#|#|     |#|#|#|#|#|#|#|#|#|#|#|#|#|#|      or you will fall to
+19|#|#|#|#|#|     |#|#|#|#|#|#|#|#|#|#|#|#|#|#|      your death.
+20|#|#|#|#|#|  d  |#|#|#|#|#|#|#|#|#|#|#|#|#|#|
+21|#|#|#|#|#|#|s|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|      Once on the far side,
+22|#| 6 | 5 g  $  g 1 | 2 |#|#|#|#|#|#|#|#|#|#|      UNEQUIP the staff as it
+23|#|_  |_  |     |  _| __|#|#|#|#|#|#|#|#|#|#|      is cursed. Open the
+24|#|       |P|P|P|       |#|#|#|#|#|#|#|#|#|#|      chest at 22g to find
+25|#|P|P|P|P|P| |P|P|P|P|P|#|#|#|#|#|#|#|#|#|#|      the KEY OF DECISIONS.
+26|#|_  __  |P| |P|  __  _|#|#|#|#|#|#|#|#|#|#|      This key will open
+27|#|   |   |-- --|   |   |#|#|#|#|#|#|#|#|#|#|      either of the gates
+28|#| 3 | 4 g--D--g 8 | 7 |#|#|#|#|#|#|#|#|#|#|      22e or 22i. It does not
+29|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|#|      matter which gate you
+   a b c d e f g h i j k l m n o p q r s t u v       choose to open.
+
+     Every room you enter here will have a difficult battle and I do mean
+difficult. Don't save your game <unless you did a backup of a save with your
+group outside of the temple recently> until you have determined whether or
+not your group is ready for the encounters you will find here.
+
+WARNING: DO *NOT* PUSH EVERY BUTTON YOU FIND IN THIS AREA!!!!
+
+     For the sake of convenience, I'm going to describe what happens if you
+open the gate to the east. Fight in rooms 1 and 2 and move to the northeast
+corner of the room where you will be teleported to room 3. Fight through
+room 4 where you will find another chest containing the KEY OF FIRST TEST.
+With that key you can open the gate to the east and cross the ramp to the
+north <no pit this time>. You will meet Xorphitus on the way, but again,
+you will not fight him. On the far side you will find another chest with the
+KEY OF QUANDRY. This will open either gate east or west. We're going west
+this time. Fight through 5 and 6, teleport to 7, fight through 8, open the
+chest for the KEY OF FINALITY which will open the gate to your west. Move to
+28g and SAVE YOUR GAME.
+
+BUTTONS:
+     You will notice that there is a button at this location. If you push
+it, you will have access to the stairs leading out of the temple. If you
+push it, you will have to go through all 8 rooms of the temple, fighting all
+the way to return to this point. You can gain a lot of experience by going
+through the temple repeatedly but what you want to know is how to win the
+game so:
+
+END GAME:
+     Having NOT pushed the button, head north on the ramp where you will
+again meet Xorphitus. This time you will need to fight him and a number of
+Greater Demons. Defeat him and his companions. Right after your victory,
+Xorphitus' spirit will rise and talk to you. He will ask why you killed him.
+His comments are rather humorous and among the jokes will be a hint of what
+you need do next. After he disappears, head north. You will find what looks
+like a dead end. Walk through the north wall, just walk through it, no
+searching, just walk. You will fall down a chute. To the north will be a
+door <20g>. To the south is a button. DO NOT TOUCH THE BUTTON UNLESS YOU
+WISH TO LEAVE THE TEMPLE AND GO THROUGH IT FROM THE BEGINNING <minus the
+Xorphitus encounter>.
+     BEFORE going through the north door, EQUIP your party with the HOLY
+STAKES OF WOOD, the ROCKS OF REFLECTION and the HOLY H2O+. Through that door
+lies the encounter with the Bane King and Rebecca. Hope you're ready. Maybe
+you should save your game in case you aren't ready and don't know it.
+     Have the character carrying the SILVER CROSS USE it in the 1st round.
+The stakes and holy water will not have effect until the cross has been
+used. Use the stakes and holy water for offensive attacks and cast all the
+defensive spells you can. Cast Silence and Anti-Magic. Good luck!
+     If you manage to defeat those two, you will get some very nice
+equipment including the RING OF STARS and lots of experience points. Use the
+RING OF STARS on the KING'S DIARY while in REVIEW mode. This will give you
+the security code to open the gate at 17g. The code is "THE HAND OF
+DESTINY".
+     Heading north you will find the pen, the bane of the cosmic forge, at
+12 g <"P" on the map>.
+
+ENDING 1:  TAKE THE PEN
+ENDING 2:  LEAVE THE PEN AND WALK THROUGH THE NORTH WALL. You will find a
+           door to the north. Open it with knock-knock spells or pick lock.
+           On the other side of the door is Bela the Dragon. He's not easy
+           to fight but if you are successful you will get the KEY OF STARS
+           and be able to walk through another fake wall to the north, open
+           a gate and find a spaceship at 5g. Enter the spaceship to win!
+
+ALTERNATE ENDINGS:
+     Way back on the Isle of the Dead you need to drop the SILVER CROSS
+before you see Rebecca at 9z <on that map>. Continue as describe before
+until you have gone around the temple, down the chute and are ready to open
+the door where the Bane King and Rebecca await. The Bane King will appear
+first and after explaining the torment of his life, he will kill himself.
+Rebecca will then appear. If you respond to her first question with "I LOVE
+YOU" she will give you a Diamond Ring. She will tell you more about herself
+and the Queen and will give you a key.
+
+ALTERNATE ENDING 1:    TAKE THE PEN
+ALTERNATE ENDING 2:    SEE BELA AND JOIN HIM TO CHASE THE COSMIC ENTITY.
+ALTERNATE ENDING 3:    SEE BELA AND DON'T JOIN HIM in which case you will
+                       find the spaceship gone and you can exit this area
+                       of the temple by following the long hallways out.
+                       The hallway exits to the Forest Area at location
+                       5D on that map.
+
+     After "winning" the game, your characters are returned to the Forest
+Area so that you may continue to play for as long as you wish. Save your
+characters to another directory or floppy disk to use them in Wiz7.

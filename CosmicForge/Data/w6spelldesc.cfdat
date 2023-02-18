@@ -1,0 +1,148 @@
+#
+#
+#
+"Protects Target Group from Fire, overwrites the current {SHIELD STRENGTH} if the new {SHIELD STRENGTH} is greater
+Reduces each of {DAMAGE ROLLS}, {DAMAGE DICE}, {DURATION ROLLS} and {DURATION DICE} of the Fire Spells the following way:
+X = [{SHIELD STRENGTH} * {VALUE TO REDUCE} / 100]; X times 50% chance to reduce {VALUE TO REDUCE} by 1 (minimum result is always 1)
+{SHIELD STRENGTH} is reduced by [Max(1, {SHIELD STRENGTH} / 10)] each round"#
+#
+#
+Each Random effect has the equal probability#
+"Cloud, applies its effect immediately, sets {CLOUD STRENGTH} to {POWER} and lingers while {CLOUD STRENGTH} is positive
+Every subsequent round the {CLOUD STRENGTH} is used as {POWER} for the purposes of calculating the effect
+Every subsequent round the {SPELL EFFICIENCY} is calculated as [25 + 5 * {CLOUD STRENGTH}] (ignoring {SPELL LEVEL} and difference in Caster's and Target's {LEVELS})
+Every subsequent round the {CLOUD STRENGTH} is reduced by 1"#
+#
+#
+#
+#
+"Reduces Affected Targets' {EFFECTIVE LEVEL} by X.
+Can decrease Affected Targets' {MELEE DAMAGE} and {TO HIT} modifiers for the duration of the combat or until it is changed by other Spells
+If the current {MELEE DAMAGE} modifier is positive then decrease it by Y, otherwise set it to -Y if it is greater than -Y
+If the current {TO HIT} modifier is positive then decrease it by Y, otherwise set it to -Y if it is greater than -Y
+Y = [(X + 1) / 2], where X = [{POWER} - Random(0, Z)], where Z = min({POWER}, max(0, W)), where W = [({RESISTANCE} - {SPELL EFFICIENCY})*{POWER}/100]
+If a Target is hidden then it is unaffected. If a Target is invisible then there is 2/3 chance of being unaffected"#
+"Halves Affected Targets' current Attack Initiatives. Can decrease Affected Targets' {INITIATIVE} modifier
+If the current {INITIATIVE} modifier is positive then reduce it by Y, otherwise set it to -Y if it is greater than -Y
+Y = X * 3, where X = [{POWER} - Random(0, Z)], where Z = min({POWER}, max(0, W)), where W = [({RESISTANCE} - {SPELL EFFICIENCY})*{POWER}/100]
+If a Target is hidden then it is unaffected. If a Target is invisible then there is 2/3 chance of being unaffected
+The {INITIATIVE} modifier gravitates to zero and thus is modified by +1/-1 every round"#
+"Can increase {INITIATIVE} modifier for each Creature in the Target Group
+If the current {INITIATIVE} modifier is negative then increase it by X, otherwise set it to X if it is lower than X, where X = {POWER}*2
+The {INITIATIVE} modifier gravitates to zero and thus is modified by +1/-1 every round"#
+Reduces Target's Paralyze duration by [25*{POWER}]#
+"Protects Target Group from Cold, overwrites the current {SHIELD STRENGTH} if the new {SHIELD STRENGTH} is greater
+Reduces each of {DAMAGE ROLLS}, {DAMAGE DICE}, {DURATION ROLLS} and {DURATION DICE} of the Cold Spells the following way:
+X = [{SHIELD STRENGTH} * {VALUE TO REDUCE} / 100]; X times 50% chance to reduce {VALUE TO REDUCE} by 1 (minimum result is always 1)
+{SHIELD STRENGTH} is reduced by [Max(1, {SHIELD STRENGTH} / 10)] each round"#
+#
+#
+#
+#
+"Protects Target Group from Missiles, overwrites the current {SHIELD STRENGTH} if the new {SHIELD STRENGTH} is greater
+Deflects 'Shoot' and 'Throw' attacks (but not 'Fire' attacks or Spells) if {SHIELD STRENGTH} > Random(0, 99)
+{SHIELD STRENGTH} is reduced by [Max(1, {SHIELD STRENGTH} / 12)] each round"#
+#
+"Protects Target Group from Air, overwrites the current {SHIELD STRENGTH} if the new {SHIELD STRENGTH} is greater
+Reduces each of {DAMAGE ROLLS}, {DAMAGE DICE}, {DURATION ROLLS} and {DURATION DICE} of the Air Spells the following way:
+X = [{SHIELD STRENGTH} * {VALUE TO REDUCE} / 100]; X times 50% chance to reduce {VALUE TO REDUCE} by 1 (minimum result is always 1)
+{SHIELD STRENGTH} is reduced by [Max(1, {SHIELD STRENGTH} / 12)] each round
+Completely deflects Baleful Spells with 'Dead' incapacitation effect and Air resistance If ({SHIELD STRENGTH}/5 greater than {POWER}). ASPHYXIATION is the only such spell."#
+#
+"Cloud, applies its effect immediately, sets {CLOUD STRENGTH} to {POWER} and lingers while {CLOUD STRENGTH} is positive
+Every subsequent round the {CLOUD STRENGTH} is used as {POWER} for the purposes of calculating the effect
+Every subsequent round the {SPELL EFFICIENCY} is calculated as [25 + 5 * {CLOUD STRENGTH}] (ignoring {SPELL LEVEL} and difference in Caster's and Target's {LEVELS})
+Every subsequent round the {CLOUD STRENGTH} is reduced by 1"#
+Reduces Target's Poison strength by [{POWER}] and Poison duration by [{POWER}*5]#
+#
+"For every Cloud spell on the Group: {CLOUD STRENGTH} = {CLOUD STRENGTH} - {POWER}
+Air Pocket {SHIELD STRENGTH} = {SHIELD STRENGTH} - {POWER}*10"#
+Random effect on the Target: If Random(0, 99) < [{POWER}*5] then 'DEAD' effect otherwise ('POISON' + damage) effect#
+Protects you from the falling damage#
+"Cloud, applies its effect immediately, sets {CLOUD STRENGTH} to {POWER} and lingers while {CLOUD STRENGTH} is positive
+Every subsequent round the {CLOUD STRENGTH} is used as {POWER} for the purposes of calculating the effect
+Every subsequent round the {SPELL EFFICIENCY} is calculated as [25 + 5 * {CLOUD STRENGTH}] (ignoring {SPELL LEVEL} and difference in Caster's and Target's {LEVELS})
+Every subsequent round the {CLOUD STRENGTH} is reduced by 1"#
+#
+#
+#
+#
+#
+"Can improve Target's {AC} modifier for the duration of the combat or until it is changed by other Spells
+If the current {AC} modifier is positive then improve it by {POWER}, otherwise set it to -{POWER} if it is greater than -{POWER}. Note that the smaller {AC}, the better!"#
+Adventuring. Shows the compass on the game screen#
+"Unlocks the Locked Door in front of the party if [3 * Random(1,  {POWER}*2)] > [2 * {DOOR'S LOCKPICKING DIFFICULTY}]
+Opens the Trapped Chest if Max(5, Min(X, 95)) > Y, where X = [{POWER}*10 + 50 - {LOOT TRAP LEVEL}*5] and Y = Random(0, 99)
+If failed to open the Trapped Chest then if [100 - (100 - X)/3] >= Y does something different from otherwise"#
+#
+Improves Party's {AC} modifier by [({POWER} + 1) / 2] for the duration of the spell, not cumulative with itself, but cumulative with the combat boost spells#
+#
+"Cloud, applies its effect immediately, sets {CLOUD STRENGTH} to {POWER} and lingers while {CLOUD STRENGTH} is positive
+Every subsequent round the {CLOUD STRENGTH} is used as {POWER} for the purposes of calculating the effect
+Every subsequent round the {SPELL EFFICIENCY} is calculated as [25 + 5 * {CLOUD STRENGTH}] (ignoring {SPELL LEVEL} and difference in Caster's and Target's {LEVELS})
+Every subsequent round the {CLOUD STRENGTH} is reduced by 1"#
+"Can worsen {AC} modifier for each Creature in the Target Group for the duration of the combat or until it is changed by other Spells
+If the current {AC} modifier is negative then worsen it by X, otherwise set it to X if it is lower than X
+where X = [{POWER} - Random[0, max(0, [({RESISTANCE} - {SPELL EFFICIENCY})*{POWER}/100])]]
+Note that the smaller {AC}, the better!"#
+"Nothing will appear if there is already a summoned group of monsters fighting for your cause.
+Summons monsters from the ID list of 212, 213, 214, 215, 216, 217. First an amount is determined randomly in [1, 3] interval, using point of {POWER} for each.
+Then based on the remaining {POWER} a specific Monster is determined:
+Power 0 - 212, Power 1 - 213, Power 2 - 214, Power 3 - 215, Power 4 - 216, Power 4 & 5 - 217"#
+Removes Target's 'Stoned' incapacitation if (21 - {VITALITY}) < [3*{POWER}].
+Upon success ages Target by [183 + Random(0, 182)] days and if {VITALITY} less than Random(0, 17) then the Target dies#
+#
+#
+"Can improve {AC} and {TO HIT} modifiers for each Creature in the Target Group for the duration of the combat or until it is changed by other Spells
+If the current {AC} modifier is positive then improve it by Y, otherwise set it to -Y if it is greater than Y, where Y = [({POWER} + 1) / 2]. Note that the smaller {AC}, the better!
+If the current {TO HIT} modifier is negative then increase it by Y, otherwise set it to Y if it is lower than Y, where Y = [({POWER} + 1) / 2]"#
+Baleful in combat, but the special use in NPC interaction mode is not clear!#
+Reduces the duration of the Target's ailments (Afraid, Asleep, Blinded, Nauseated, Cursed/Irritated) by [{POWER}*{POWER} + 4]#
+"Special use in locks/traps, the logic is not clear!
+Probably allows determining the exact trap that is on the chest."#
+[70 + {POWER} * 5] chance to detect secret when nearby#
+"In combat for each monster group: if [{POWER}*10 + 80 - {SOMETHING}*5] > Random(0, 99) then Party knows exactly what monsters it is fighting
+In inventory mode identifies the item if {POWER}*3 >= {ITEM'S CURIO}"#
+#
+Special use in NPC interaction mode, not clear!#
+Reduces the duration of the Target's Insane ailment by [{POWER}*25]#
+#
+"Nothing will appear if there is already a summoned group of monsters fighting for your cause.
+Summons monsters from the ID list of 218, 219, 220, 221, 222, 223. First an amount is determined randomly in [1, 3] interval, using point of {POWER} for each.
+Then based on the remaining {POWER} a specific Monster is determined:
+Power 0 - 218, Power 1 - 219, Power 2 - 220, Power 3 - 221, Power 4 - 222, Power 4 & 5 - 223"#
+Shows the map around the Party - details depend on the {POWER}#
+#
+Shows the map around the Party with the Items/Objects displayed#
+#
+Restores Target's {HP} and ages it by 1 day#
+#
+#
+#
+Improves Party's {TO HIT} modifier by [({POWER} + 1) / 2] for the duration of the spell, not cumulative with itself, but cumulative with the combat boost spells#
+"No clear how the result is used in combat!
+Increases the ?duration? of the Blink by {POWER}*3.
+Sets the ?initiative-base parameter? to [Random(0, [({INITIATIVE} - 1) / 2 - 1]) + ({INITIATIVE} - 1) / 2]"#
+"Protects Target Group from Spells, overwrites the current {SHIELD STRENGTH} if the new {SHIELD STRENGTH} is greater
+Reduces each of {DAMAGE ROLLS}, {DAMAGE DICE}, {DURATION ROLLS} and {DURATION DICE} of the Spells the following way:
+X = [{SHIELD STRENGTH} * {VALUE TO REDUCE} / 100]; X times 50% chance to reduce {VALUE TO REDUCE} by 1 (minimum result is always 1)
+{SHIELD STRENGTH} is reduced by [Max(1, {SHIELD STRENGTH} / 20)] each round of combat"#
+"Nothing will appear if there is already a summoned group of monsters fighting for your cause.
+Summons monsters from one of the ID lists {200, 201, 202, 203, 204, 205} or {206, 207, 208, 209, 210, 211}. The chance of taking either list is 50%.
+First an amount is determined randomly in [1, 3] interval, using point of {POWER} for each.
+Then based on the remaining {POWER} a specific Monster is determined:
+Power 0 - 200 or 206, Power 1 - 201 or 207, Power 2 - 202 or 208, Power 3 - 203 or 209, Power 4 - 204 or 210, Power 4 & 5 - 205 or 211"#
+"Hampers Target Group spell-casting abilities, overwrites the current {ANTIMAGIC STRENGTH} if the new {ANTIMAGIC STRENGTH} is greater
+{ANTIMAGIC STRENGTH} = {POWER} * 2
+Causes a Spell cast by the Affected Group's Creature to fizzle if Random(0, {CREATURE LEVEL} + {ANTIMAGIC STRENGTH}) < {ANTIMAGIC STRENGTH}
+{ANTIMAGIC STRENGTH} is reduced by 1 each round"#
+"Can remove 'Cursed' status from the equipped Items, so they can be unequipped
+The 'Curse' status is removed from an Item if {POWER}*15 > Random(0, 99)"#
+Harmful. Deals specified damage to the Target and heals the caster with the "Heal Wounds {78}" spell with the {POWER} = {DAMAGE DEALT} / 7#
+Baleful. Modifies the Spell's Efficiency by the triple level difference: {SPELL EFFICIENCY} += [({CASTER LEVEL} - {TARGET LEVEL})*3]#
+#
+Removes Target's 'Dead' incapacitation if (21 - {VITALITY}) < [3*{POWER}]. Upon success ages Target by [365 + Random(0, 182)] days and decreases {VITALITY} by 1#
+#
+Deals [1 d X] per {POWER} damage to the Target, where X = Max({MIN DAMAGE DICE}, [{CUR HP} * {MAX DAMAGE DICE} / {MAX HP}])#
+#
+#

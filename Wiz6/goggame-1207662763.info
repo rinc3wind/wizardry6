@@ -1,0 +1,38 @@
+
+{
+    "gameId" : "1207662763",
+    "rootGameId" : "1207662763",
+    "standalone" : true,
+    "dependencyGameId" : "",
+    "language"         : "English",
+    "name"             : "Wizardry 6",
+    "playTasks"        : [
+        {
+            "isPrimary" : true,
+            "type"      : "FileTask",
+            "path"      : "DOSBOX\\dosbox.exe",
+            "workingDir" : "DOSBOX",
+            "arguments"  : "-conf \"..\\dosboxWizardry6.conf\" -conf \"..\\dosboxWizardry6_single.conf\" -noconsole -c \"exit\""
+        },
+        {
+            "name" : "Graphic Mode Setup",
+            "type" : "FileTask",
+            "path" : "DOSBOX\\GOGDOSConfig.exe",
+            "workingDir" : "DOSBOX",
+            "arguments"  : "1207662763"
+        }
+    ],
+    "supportTasks"     : [
+        {
+            "name" : "Support",
+            "type" : "URLTask",
+            "link" : "http://www.gog.com/en/support/wizardry_6_7"
+        },
+        {
+            "name" : "Manual",
+            "type" : "FileTask",
+            "path" : "Wizardy 6 - Manual.pdf",
+            "workingDir" : ""
+        }
+    ]
+}

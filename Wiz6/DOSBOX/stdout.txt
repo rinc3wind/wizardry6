@@ -1,0 +1,11 @@
+DOSBox version GRIDC-SVN
+Copyright 2002-2019 DOSBox Team, published under GNU GPL.
+---
+CONFIG: Loading primary settings from config file ..\dosboxWizardry6.conf
+"vga" is not a valid value for variable: machine.
+It might now be reset to the default value: svga_s3
+120 is outside the allowed range 0-100 for variable: prebuffer.
+It has been set to the closest boundary: 100.
+CONFIG: Loading additional settings from config file ..\dosboxWizardry6_single.conf
+GAMELINK: Initialised. Allocated 22 MB of shared memory.
+MIDI: Opened device:win32

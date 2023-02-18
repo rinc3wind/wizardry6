@@ -1,0 +1,270 @@
+***********************
+Event Manager Dialog
+***********************
+
+Each map can hold up to 240 events. That's why such huge evented maps as 'New City' and 'Dane Tower' are not complete and part of them transferred to other maps.
+Each event can have 'Event ID'. Several events can have the same ID. 'Event ID' used to manage particular set of events (activate/deactivate, i.e. make them available/unavailable).
+Each cell can hold up any amount of events (regarding restriction 240 per map).
+Important thing: events on one cell are ordered and executed from first to last. Only events that has no 'Event ID' (zero event id) or that has active 'Event ID' are executed, events with inactive 'Event ID' are skipped.
+
+So you can create/modify/delete events using this dialog.
+You can view cell events using this dialog.
+
+Some events are not implemented yet. They will be.
+Some event parameters I can't figure out. I appreciate any ideas/help/testing on this matter to fix that problem.
+
+Event display filter (that is used to show up certain events and other map features) are taken from tha main map dialog. I will improve that system to be more convenient soon.
+
+Also event should have their initial active/inactive state determined somewhere. I did not figured it yet, but it will be necessary to do it. Will start research soon.
+
+
+***********************
+Map event IDs Dialog
+***********************
+
+On this dialog you can see all the Event IDs for current map.
+List with IDs contains 'Initial State' & 'Usage' columns.
+'Initial State' - Initial Activity State of the Events with specified ID on current map. For example, Event ID 3 on map 0 is initially inactive - it is because a text having this ID should appear only when your party falls asleep and the 'wandered' to the certain place and get certain message. This message should be inactive.
+'Usage' - Column shows 'used' for an ID if map contains at least one event that has this ID. You can see all events with selected event ID in the 'Events' list.
+You can change 'Initial State' in this dialog by doubleclicking an ID item. Clicking OK in this dialog will change data in memory. Note, that this data does not belong to the map data and map actually will remain unchanged. To transfer changes from memory to the file you should use main dialog button 'Save' or click 'Ctrl-S' at any time (note, that this act will save into the game data files ALL changed info, not only 'initial activity states'.
+
+
+***********************
+Map Events Edit Dialogs
+***********************
+
+Every edit dialog contains field 'Event ID'. It is an ID for your event (or several events) that can be used by other events to turn on/off your event.
+Some events contain 'Deactivate me flag'. This flag works only when this event has ID. This flag deactivates this event ID, so all subsequent events with this ID on this cell and on other cell on this map will not be processed.
+
+1. 'No path anomalies'
+This event encountered in original scenario in pair with some 'locked doors'. When door is opened event 'locked door' became inactive and this event became active. Without this event game engine will count just unlocked door as locked, only reentering this cell will render the door truly 'passable'.
+'flag1' - Unknown flag. Used in original scenario once. In New City. Please, notify me if you got any ideas.
+Typically requires Event ID.
+
+2. 'Fight'
+Fight with monster.
+'Specific Monster' - Allows to specify specific monster to fight.
+'Random Monster on this map' - Allows to specify random encounter. In that case random monster will be taken randomly out of 12 monsters in specified monster set (see Quadrants Manager Dialog description).
+'Random Monster on this map' & 'Specific Monster' are mutually exclusive.
+'Monster Set' - Allows to select one of 12 monster sets for current map if you selected 'Random Monster on this map'.
+Typically requires Event ID.
+
+3. 'Ladder'
+A kind of "click me" teleporter.
+'Map', 'Quadrant' and cell coordinates 'X' and 'Y' - This will be the place 'ladder' leads to.
+'Ladder leads'  - Ladder leads up/down.
+'Ladder facing (climbable sides)' - Determines from wich sides ladder is accesible.
+Important: Make sure you add corresponding 'ladder' display specifier to this cell in Terrain Manager Dialog to make 'ladder' work (see Terrain Manager Dialog description).
+Typically does not require Event ID.
+
+4. 'Teleporter'
+'Auto' teleporter.
+'Map', 'Quadrant' and cell coordinates 'X' and 'Y' - This will be the place 'teleporter' leads to.
+'Ending Sequence' - I believe you can understand this mode for yourself.
+'Unknown parameter' - In original map values 0, 1, 6 encountered. Please, notify me if you got any ideas.
+May require or not Event ID.
+
+5. 'Locked Door'
+See the name.
+This dialog covers two types of events: Lockpickable Locked doors and Not Pickable Locked Doors. Checkbox 'Door lockpickable or openable' covers this difference.
+Lockpickable doors can be lockpicked or opened by an item. Not Pickable doors cannot be lockpicked. Feel free to check all variants.
+Direction(s) could be specified. It is a mask of 4 values, so you can set up to all four directions (buttons are actually checkboxes). Multidirection can be used if more than one locked door on a single cell (this can be observed on Ukpyr map of the original scenario).
+'Door lockpickable or openable' - Checkbox will change door lockpickability.
+'Lockpicking\force difficulty' - Covers lockpicking and forcing the door. Values 1 to 15 (0 probably means impossibility to lockpick and/or exceptional strength to open the door). My formulaes: (difficulty/3 + 1) - number of checks when lockpicking, (difficulty/2 + 4) - number of door strength points.
+'Item' - simply an item that can open the door.
+''Activates following event' - Activates all events on the map with specified ID when the door is opened either way (see example on Ukpyr map of the original scenario - this trick used to open the same door from the other side).
+Typically requires Event ID.
+
+6. 'No Monster Zone'
+That strange. Maybe someone will figure out what does it means?
+No paramters to set except for event ID.
+Obviously it is not fully 'No Monster Zone', as I thought. Monsters still attack while staying awake at those cells, but maybe they will not attack during the rest? Did not performed enough tests.
+Typically does not require Event ID.
+
+7. 'Wall Inverter'
+'You shall not pass!' if there is a wall and you'll pass if there is a wall. Does not work with some walls (including forest it seems :( I dreamed about making a secred passage to a secret glade).
+Direction(s) could be specified. It is a mask of 4 values, so you can set up to all four directions (buttons are actually checkboxes). Multidirection can be used if more than one wall inverter placed on a single cell (this can be observed on Sky City map of the original scenario).
+This event should basically change wall passability, though I'm not 100% sure...
+Typically does not require Event ID.
+
+8. 'Secret Button (reveals passage)'
+Click to make a passage.
+Direction could be specified. Only one in this case.
+This event should basically remove the wall on which this button is placed. Simple.
+Important: Make sure you add corresponding 'secret button' display specifier to this cell in Terrain Manager Dialog to make 'secret button' visible and clickable by mouse. Without 'secret button' display specifier 'secret button' event can be activated only by search option.
+Typically does not require Event ID.
+
+9. 'Party Mover'
+Can move or rotate party.
+Direction(s) could be specified. It is a mask of 4 values, so you can set up to all four directions (buttons are actually checkboxes). In multidirection case the game engine will randomly select single direction from the specified directions.
+'Action' - 'Move' or 'Turn'. 'Move' will turn party to the direction selected and then will move it for 'Distance' cells. 'Turn' will just turen the party around.
+'Distance' - How many cell your party will travel.
+'Movement delay' - delay between cell moves (0 for almost instant transfer)
+'flag1', ..., 'flag3' - Unknown flags. Used in original scenario. Please, notify me if you got any ideas.
+May require or not Event ID.
+
+10. 'Loot' - The most desired event. :)
+Just a couple of items.
+Direction could be specified. Only one in this case.
+'Activates following event' - Activates all events on the map with specified ID. Usually it is used on 'chest loots' to activate 'Display Feature Change' event to remove chest from the cell. May be used for other purposes as well.
+'Preamble text' - Text that appears when party steps to the cell with the loot and loot is still there.
+'Activation text' - Text that appear just when loot is beigh taken.
+'Loot' - Loot reference. Simple.
+'Chest flag' - Is this loot a chest-like loot. Requires a click to keyhole symbol on the game screen to invoke the loot.
+'Direction aware flag' - Set this flag if you want the loot to be able to invoked when party faces certain direction.
+'Unknown flag 1' - I have no ideas. Never used in original scenario. Please, notify me if you got any ideas.
+'Unknown flag 2' - I have no ideas. Used in original scenario. Please, notify me if you got any ideas.
+Typically requires Event ID.
+
+11. 'Item Equip check'
+I must have this stone somewhere....
+'Activates following event when check succeeded' - Activates all events on the map with specified ID if check succeeded.
+'Activates following event when check failed' - Activates all events on the map with specified ID if check failed.
+'Check for item' - Item in question.
+'Enough to have in bagpack flag' - With this flag set check will succeed even if item is not equipped, but lies in the backpack.
+'Unknown flag 2' - I have no ideas. Used in original scenario. Please, notify me if you got any ideas.
+'Unknown flag 3' - I have no ideas. Used in original scenario. Please, notify me if you got any ideas.
+It seems that 'Unknown flag 2' & 'Unknown flag 3' together will only activates success events, but not failure, but I'm not sure.
+Typically requires Event ID.
+
+12. 'Negative Effect' This is puzzling one
+Be careful!... Boom!
+'Effect' - Effect on the party. Simple.
+'Power 1' - Power of the effect.
+'Power 2' - Additional parameter. If 'Power 1' > 0 and 'Power 2' > 0 party recieves 'Power 1'd'Power 2' damage unless 'Suppress damage flag' is set.
+'Text' - Text displaying when party suffers the effect.
+'Suppress damage flag' - party won't receive damage when this flag is set.
+'Unknown Flag' - I have no ideas. Used in original scenario. Please, notify me if you got any ideas.
+'Unknown parameter' - I have no ideas. Heavily used in original scenario. Please, notify me if you got any ideas.
+'Unknown parameter 2' - I have no ideas. Heavily used in original scenario. Please, notify me if you got any ideas.
+It seems that 'Unknown parameter' influences following facts: which members will be affected, resistance ignored or not. Maybe both unknown parameters are actually bitmasks, but I can't figure out what they mean.
+Typically requires Event ID.
+
+13. 'Text'. Simple one
+Ah-ha....
+Direction could be specified. Only one in this case.
+'Text' - Text. Simple.
+'Automatically vanish flag' - Text will disappear after a while, otherwise it will wait for user input.
+'Direction aware flag' - Direction used only if this flag is set.
+May require or not Event ID.
+
+14. 'Item Usage'
+What if I insert this coin here....
+Direction(s) could be specified. It is a mask of 4 values, so you can set up to all four directions (buttons are actually checkboxes). Determines the correct party facing to use the item.
+'Activates following event' - Activates all events on the map with specified ID.
+'Deactivates following event' - Deactivates all events on the map with specified ID.
+'Item' - Item that can be used.
+'Unknown parameter' - I have no ideas. Used in original scenario. Values encountered 0, 4, A. Please, notify me if you got any ideas.
+Typically requires Event ID.
+
+15 'Fountain'
+To drink or not to drink.
+Direction could be specified. Only one in this case. Determines on which wall fountain will be set.
+'Power' - Two numbers determines the power of the fountain.
+'Restores' & 'Cures' - Positive Effects.
+'Drains' & 'Adds' - Negative Effects.
+Positive Effects & Negative Effects can be combined in any combination.
+Important: Make sure you add corresponding 'fountain' display specifier to this cell in Terrain Manager Dialog to make 'fountain' work (see Terrain Manager Dialog description).
+Typically does not require Event ID.
+
+16. 'Manage portcullis'
+Pull the lever and the gate will open... probably...
+Used to open/close a portcullis. Usually activated by another event (lever, item usage, etc)
+Direction could be specified. Only one in this case. Determines on which wall portcullis is situated on the target cell.
+'Quadrant', 'X' and 'Y' - coordinates of the target cell where portcullis in question is situated.
+'Action' - open or close the portcullis.
+'flag1', ..., 'flag10' - Unknown flags. Maybe some connected with the sound, but I can't check this out because sound does not work on my PC. Used in original scenario. Please, notify me if you got any ideas.
+'flag1', ..., 'flag4' - compose a single number (if that matters for the research)
+'flag5', ..., 'flag8' - compose a single number (if that matters for the research)
+'Unknown parameter' - I have no ideas. Used in original scenario. Values encountered 0, 1 (0 encountered once, all others are 1). Please, notify me if you got any ideas.
+Typically requires Event ID.
+
+17. 'Incident'
+What can I say here? This launch an incident - scripted event such as meeting with an NPC, Funhouse Gadget, conversation with Spaceship, Jan-Ette Battle, etc.
+Direction can be choosen. For this check 'Direction Aware flag'.
+'Direction aware flag' - Set this flag if you want the incident to be able to invoked when party faces certain direction.
+'Incident' - Just select an incident you want to be there.
+'flag1' - Unknown flag. Used in original scenario. Please, notify me if you got any ideas.
+Typically requires Event ID.
+
+18. 'Time Check' This was little tough one.
+Performs time check that the 'current time' >= timeFrom and 'current time' < timeTill. Note, that from 08:00 till 06:00 means that check will fail from 06:00 till 08:00.
+'Activates following event when check succeeded' - Activates all events on the map with specified ID if check succeeded.
+'Activates following event when check failed' - Activates all events on the map with specified ID if check failed.
+'Hour from' and 'Hour till' - range of hours inside which check will succeeds. 00:00 = 24:00, so allowed values are 0-23.
+'flag2' - Unknown flag. Used in original scenario. Please, notify me if you got any ideas.
+Typically requires Event ID.
+
+19. 'Wall Changer'
+Changes 4 walls on one cell.
+'Quadrant', 'X' and 'Y' - Coordinates of the target cell which wall will be changed.
+'New <direction> wall' - A wall that will be on specified direction of target cell.
+'flag1', ..., 'flag4' - Unknown flags. Used in original scenario. Please, notify me if you got any ideas.
+Typically requires Event ID.
+
+20. 'Display Feature Change'
+Changes display feature on the cell.
+'Quadrant', 'X' and 'Y' - Coordinates of the target cell where display feature will be changed.
+'New Display Feature' - Display feature that will appear on the cell.
+'Wall of the cell' - Direction could be specified. Only one in this case. Determined facing of the direction-dependent display features.
+'Message flag' - When Display Feature to be appeared is 'Pushed Secret Button' then game writes "(PRESS BUTTON)" string, when 'Lever Up' or 'Lever Down' then game writes "(PULL LEVER)"
+'flag1', ..., 'flag4' - Unknown flags. Used in original scenario. Please, notify me if you got any ideas.
+Typically requires Event ID.
+
+21. 'Hidden Thing'
+All hidden things or pushable/pullabe things: hidden loot, when search reveals a treasure, levers, buttons.
+Direction could be specified. Only one in this case. Determines facing of the party to successfully invoke the event.
+'Direction aware flag' - Set this flag if you want the direction to be important, otherwise party can face any direction to invoke the event.
+'Truly Hidden flag' - Setting this flag on you'll allow Scouts in player party to 'Detect something'.
+'Special Flag' - this flag is used in sinle place in original scenario: where sconce should be pushed to open the portcullis. Not sure about its truly meaning.
+'Text' - Game will display this text when party steps on the cell with this event.
+'Activates following event' - Activates all events on the map with specified ID.
+'Allow another event ot be activated' - enables 'Also activates event'.
+'Also activates event' - Activates all events on the map with specified ID.
+Typically requires Event ID.
+
+22. 'Event Manager'
+Manages specified event ID on specified map.
+'Map' - Map on which Event ID activity state will be changed.
+'Activate/Deactivate' combobox - What to do: activate or Deactivate specified event.
+'Following event' - Manages this Dvent ID activity state.
+'Only if both of the following events are...' 'Active/Inactive/Nevermind' - This is condition. Only when this condition satisfied, Event Manager will manage specified Event ID. Two conditions exists: certain event Id(s) is(are) active, certain event Id(s) is(are) inactive. Nevermind means do not check any conditions.
+'Event1' and 'Event2' - Event IDs that are checked in condition.
+'flag4', ..., 'flag6' - Unknown flags. Used in original scenario. Please, notify me if you got any ideas.
+May require or not Event ID.
+
+23. 'NPC Theft'
+How I imagine that: This is a check. It has initially active Event ID. When NPC steps on this cell it activates one event, when party steps on this cell it activates another event. In NPC case game engine probably somehow marks an item (a map in the original scenario) to be in the inventory of NPC. This way we can get empty chest or a chest with a map.
+'Activates event when NPC first comes' - Event ID being activated when NPC steps on this cell (Theft occured).
+'Activates event when Party first comes' - Event ID being activated when Party steps on this cell (Theft was not occured).
+'Relation to the item' - ID related to an item? Arguable, did not checked this, just a guess.
+Typically requires Event ID.
+Important: This event a bit buggy? 'Activates event when NPC first comes' and 'Activates event when Party first comes' are swapped wit heach other when 'Relation to the item' does not corresponds with loot contained in one of activated event. I just don't know what is wrong. Just swap events and see if it works as you like.
+
+24. 'Skill Test' - Simple One
+Testing attribute/skill of one or more members in the party or test a number.
+'Activates following event when test succeeded' - Activates all events on the map with specified ID if check succeeded.
+'Activates following event when test failed' - Activates all events on the map with specified ID if check failed.
+'Test range (from 1 to N)' - Game generates random number from 1 to 'Test range N border' and compares it with character's skill/attribute or with static number. If skill/attribute or static number is less or equal to generated value then test succeeded, otherwise failed.
+'Number' - When Subject is <Static Number> this number is being compared with Randomly Generated Value as described above.
+'Subject' - What are we testing. Here can be any attribute and one of two skills. Also a simple static number can be tested instead of character attributes/skills.
+Typically requires Event ID.
+
+25. 'Action Fork' - Understood, but still not implemented.
+This event actually encapsulates two events: 'Code Input' - such as Six Spears Puzzle (when player need to choose correct sequence of buttons) and 'Party Options' - such as Retrieval of Book of Fables (when player selects one action from several available).
+'Text' - Text. Stores caption, correct button sequence, button names in case of 'Code Input'. Stores event sequence, button names in case of 'Party Options'.
+'Number of Buttons' - Number of buttons showed.
+'Number of clicks' - Number of clicks required. 1 in case of 'Party Options'. Usually more than one in case of 'Code Input'.
+'Preamble Text offset' - Some kind of offset from the 'Text'. When 0 - no text will be shown before 'Action fork'. When greater than 0 - text will be shown before 'Action fork'. Fill free to experiment and understand the meaning of offset. When Texts Editor will be made, I'll probably redone this piece.
+'Party Options' & 'Code Input' - select the one you desire.
+'Activates following event when correct code entered' - This actual only in 'Code Input'. Activates all events on the map with specified ID if code entered is correct and deactivates all events on the map with specified ID if code entered is wrong.
+'Activates following event when wrong code entered' - This actual only in 'Code Input'. Activates all events on the map with specified ID if code entered is wrong and deactivates all events on the map with specified ID if code entered is correct.
+'Result' - This is a result window. Here you can see what 'Action Fork' are you preparing. If you see an Error here - then some parametersr are incorrect.
+'Count last button as 'Abort' flag' - For 'Code Input' checking this button on will made the last button act as 'Abort' - immediately stops input. For 'Party Options' - I have no idead what it does.
+'Remove pressed button flag' - For 'Code Input' checking this button on will cause pressed button to disappear. For 'Party Options' - I have no idead what it does.
+Typically requires Event ID.
+Note: This event heavily requires Text Editor, but there are no Text Editor yet... I hope I'll get to it someday.
+
+
+
+

@@ -1,0 +1,242 @@
+cfa.util.includeLuaFile(string luaFileName) Adds another lua file to the system. Example: cfa.util.includeLuaFile('triggers_LowerMonastery.lua')
+
+cfa.util.logMessage(string formatString, [param1], [param2], ...) Logs formatted message to the agent log (works almost like printf in C language). See examples in lua files.
+cfa.util.showMessageInGame(string formatString, [param1], [param2], ...) Shows formatted message in game (works almost like printf in C language). See examples in lua files.
+cfa.util.getRandomNumber(int upperLimit) Returns a random number in range [0, upperLimit) which means from 0 to upperLimit-1
+
+cfa.util.setBit(int number, int bit) Sets bit 'bit' of the 'number' to 1 and returns the result.
+cfa.util.clearBit(int number, int bit) Sets bit 'bit' of the 'number' to 0 and returns the result.
+cfa.util.getBit(int number, int bit) Returns true if the bit 'bit' of the 'number' is set to 1 and false if it is set to 0.
+
+cfa.util.bitWiseAND(int number, int mask) Returns the result of bit-wise AND between number and mask.
+cfa.util.bitWiseOR(int number, int mask) Returns the result of bit-wise OR between number and mask.
+cfa.util.hasAllBitsSet(int number, int mask) Returns true if all bits that are 1 in the mask are also 1 in the number.
+cfa.util.hasAtLeastOneBitSet(int number, int mask) Returns true if at least one bit that is 1 in the mask is also 1 in the number.
+
+
+
+cfa.w8.locationGetCurrentID() Returns current Location ID.
+cfa.w8.locationGetVariableValue(string varName) Returns Location Variable value.
+cfa.w8.locationModifyVariableValue(string varName, int varVal, operation={cfa.operation.*}) Modifies Location Variable value.
+cfa.w8.locationShowMessage(int locationMessageID) Displays Location Message (Just like Location Cubes do when set to 'Location Message Area' type).
+cfa.w8.locationActivateTrigger(string triggerName) Activates the specified Trigger.
+cfa.w8.locationSetTriggerTeleportDestination(string triggerName, string destinationName) Sets new destination for the Teleporter Trigger.
+cfa.w8.locationLaunchMissile(int missileID, int maxTravelDistance, int damageRolls, int damageDice, int damageBonus, string NPPName, string soundFile) Launches a Missile (arrow, magic bolt, etc.) from the specified Named Position Point with the specified Sound.
+cfa.w8.locationAssignBehaviorScriptToMonster(int monsterID, string scriptFile) Assigns a new behaviour script to a first Monster with the specified ID found in the current Location.
+cfa.w8.locationChangeDispositionAndGiveBirthToMonsters(int monsterID, boolean giveBirthFlag, disposition={cfa.disposition.*}). For all monsters in the current Location with the specified ID: initiates birth sequence (if giveBirthFlag is 1) and sets the specified disposition.
+cfa.w8.locationSpawnMonsters(int monsterID, int amount, disposition={cfa.disposition.*}, string NPPName). Spawns Monster(s) at the specified Named Position Point.
+cfa.w8.locationSpawnItem(int itemID, boolean rotates, int probability, string NPPName). Spawns an Item at the specified Named Position Point with the given probability.
+cfa.w8.locationEnableMonGen(string monGenName, boolean enable). Enables/disables the specified Monster Generator
+cfa.w8.locationActivateMonGen(string monGenName). Activates the specified Monster Generator so it produces Monster(s)
+
+cfa.w8.factGetName(int factID) Returns Fact Name by its ID.
+cfa.w8.factGetState(int factID) Returns Fact state.
+cfa.w8.factModifyState(int factID, int factState, operation={cfa.operation.*}) Modifies Fact state.
+
+cfa.w8.npcGetName(int NPCID) Returns NPC Name by its ID (converted from Unicode to ANSI).
+cfa.w8.npcAddItemToTradeInventory(int NPCID, int itemID, int amount, int delayGameSeconds) Adds specified amount of items (itemID) to the NPC's trade inventory (NPC should be Trader) after the specified delay.
+cfa.w8.npcRemoveItemFromTradeInventory(int NPCID, int itemID) Removes all instances of the specified item (itemID) from the NPC's trade inventory (NPC should be Trader).
+cfa.w8.npcHasItemInTradeInventory(int NPCID, int itemID) Returns true if the NPC has the specified Item in the trade inventory.
+
+cfa.w8.itemGetProperty(int itemID, property={cfa.itemprop.*}) Returns Item's property. Return type depends on the property: string for name, integer for values, boolean for flags.
+
+cfa.w8.monsterGetProperty(int monsterID, property={cfa.monsterprop.*}) Returns Monster's property. Return type depends on the property: string for name, integer for values, boolean for flags.
+
+cfa.w8.lootGetRandomItem(int lootID) Returns ID of a random Item from the specified Loot.
+
+cfa.w8.partyModifyAttribute(attribute={cfa.attr.*}, int increase) Modifies the attribute by the specified value (can be negative!) for all Party members.
+cfa.w8.partyModifySkill(skill={cfa.skill.*}, int increase, boolean onlyIfActivated) Modifies the skill by the specified value (can be negative!) for all Party members.
+cfa.w8.partyAddItem(int itemID, boolean isIdentified, boolean showMessage, boolean stackIfPossible) Adds specified item (itemID) to the Party's inventory.
+cfa.w8.partyRemoveItem(int characterIndex, int itemSlotGroup={cfa.itemslotgroup.*}, int itemSlotIndex) Removes the item from the specified slot. Works, but some displaying artefacts are visible when in the Inventory Mode.
+cfa.w8.partyHasItem(int itemID, [boolean checkCharsEquipment], [boolean checkCharsBackpacks], [boolean checkPartyItems], [boolean checkCursor]) Returns true if the Party has the specified Item
+cfa.w8.partyFindItem(int itemID, [boolean checkCharsEquipment], [boolean checkCharsBackpacks], [boolean checkPartyItems], [boolean checkCursor]) Returns 3 values at once: characterIndex, itemSlotGroup and itemSlotIndex where the item is found. -1 indicates invalid value.
+cfa.w8.partyGetItem(int characterIndex, itemSlotGroup={cfa.itemslotgroup.*}, int itemSlotIndex) Returns ID of item at the specified slot or -1.
+cfa.w8.partyGetRandomCharacter(gender={cfa.gender.*}, [int characterIndexToExclude], [boolean flag1], [boolean flag2]) Returns index of the random Party member or -1 if failed. flag1 & flag2 are usually false.
+cfa.w8.partyAffectBySpell(int spellID, int powerLevel) Casts a spell on Party. If a single target spell is used, a random character is affected.
+cfa.w8.partySayQuote(int quoteIndex, [int characterIndexToExclude]) A randomly selected character in the Party says the specified Quote.
+
+cfa.w8.characterModifyAttribute(int characterIndex, attribute={cfa.attr.*}, int increase) Modifies the attribute by the specified value (can be negative!) for the party member (index in range [0, 7]).
+cfa.w8.characterModifySkill(int characterIndex, skill={cfa.skill.*}, int increase, boolean onlyIfActivated) Modifies the skill by the specified value (can be negative!) for the party member (index in range [0, 7]).
+cfa.w8.characterAddCondition(int characterIndex, condition={cfa.condition.*}, int durationMinutes, int poisonStrength, boolean displayMessage) Afflicts the party member (index in range [0, 7]) with the specified condition (fear, poison, hex, etc.). Set 'durationMinutes' to 9999 to make it permanent (can still be removed by cfa.w8.characterRemoveCondition).
+cfa.w8.characterRemoveCondition(int characterIndex, condition={cfa.condition.*}, boolean displayMessage) Remove the specified condition (fear, poison, hex, etc.) from the party member (index in range [0, 7])
+cfa.w8.characterAddItem(int characterIndex, int itemID, boolean isIdentified, boolean equipIfPossible, boolean showMessage, boolean stackIfPossible) Adds specified item (itemID) to the Party member's inventory. Returns true on success, false otherwise.
+cfa.w8.characterHasItemInBackpack(int characterIndex, int itemID) Returns true if the party member (index in range [0, 7]) has the specified Item in his/her backpack.
+cfa.w8.characterHasItemEquipped(int characterIndex, int itemID) Returns true if the party member (index in range [0, 7]) has the specified Item equipped.
+cfa.w8.characterAffectBySpell(int characterIndex, int spellID, int powerLevel) Casts a spell on the the party member (index in range [0, 7]). If not a single target spell is used, the whole Party is affected.
+cfa.w8.characterGetStatus(int characterIndex) Returns character's status as one of the values from cfa.condition.* group. Returns cfa.condition.invalid when the slot (character Index) is not occupied.
+cfa.w8.characterGetProperty(int characterIndex, int param={cfa.charprop.*}, int propClarification) Returns a character's property. Pass {cfa.attr.*}, {cfa.skill.*}, {cfa.condition.*} or {cfa.spellsphere.*} into the propClarification for attributes, skills, conditions and sp respectively.
+cfa.w8.characterSetProperty(int characterIndex, int param={cfa.charprop.*}, int propClarification, int value) Sets the value to a character's property. Pass {cfa.attr.*}, {cfa.skill.*}, {cfa.condition.*} or {cfa.spellsphere.*} into the propClarification for attributes, skills, conditions and sp respectively.
+
+cfa.w8.gameGetDay() Returns the current game day (game starts at day 1)
+cfa.w8.gameGetHour() Returns the current game hour (game starts at 12:00 midday)
+cfa.w8.gameGetMinute() Returns the current game minute
+cfa.w8.gamePrintInterfaceStringInGeneralTextArea(int stringIndex, color={cfa.color.*}) Prints the specified string from the Interface String Database in color in the General Text Area. String should not contain symbol '%' or it will crash!
+cfa.w8.gamePlaySound(string soundFile) Plays the specified sound file. The path should be relative to W8 folder, i.e. "Data\\Sound\\misc\\fountain_magic.wav".
+
+
+
+cfa.color.red
+cfa.color.green
+cfa.color.purple
+cfa.color.blue
+cfa.color.yellow
+cfa.color.lightYellow
+cfa.color.pink
+cfa.color.lightBrown
+cfa.color.white2
+cfa.color.orange
+cfa.color.brown
+cfa.color.grey
+cfa.color.pale
+cfa.color.etchedGreen
+cfa.color.etchedGrey
+cfa.color.white
+
+cfa.attr.strength
+cfa.attr.intelligence
+cfa.attr.piety
+cfa.attr.vitality
+cfa.attr.dexterity
+cfa.attr.speed
+cfa.attr.senses
+
+cfa.operation.setValue
+cfa.operation.increaseByValue
+cfa.operation.decreaseByValue
+cfa.operation.setBit
+cfa.operation.clearBit
+cfa.operation.bitwiseAND
+cfa.operation.bitwiseOR
+
+cfa.skill.sword           
+cfa.skill.axe             
+cfa.skill.polearm         
+cfa.skill.maceAndFlail    
+cfa.skill.dagger          
+cfa.skill.staffAndWand    
+cfa.skill.shield          
+cfa.skill.modernWeapon    
+cfa.skill.bow             
+cfa.skill.throwingAndSling
+cfa.skill.locksAndTraps   
+cfa.skill.stealth         
+cfa.skill.music           
+cfa.skill.pickpocket      
+cfa.skill.martialArts     
+cfa.skill.scouting        
+cfa.skill.closeCombat     
+cfa.skill.rangedCombat    
+cfa.skill.dualWeapons     
+cfa.skill.criticalStrike  
+cfa.skill.artifacts       
+cfa.skill.mythology       
+cfa.skill.communication   
+cfa.skill.engineering     
+cfa.skill.wizardry        
+cfa.skill.divinity        
+cfa.skill.alchemy         
+cfa.skill.psionics        
+cfa.skill.fireMagic       
+cfa.skill.waterMagic      
+cfa.skill.airMagic        
+cfa.skill.earthMagic      
+cfa.skill.mentalMagic     
+cfa.skill.divineMagic     
+cfa.skill.powerStrike     
+cfa.skill.powerCast       
+cfa.skill.ironWill        
+cfa.skill.ironSkin        
+cfa.skill.reflextion      
+cfa.skill.snakeSpeed      
+cfa.skill.eagleEye        
+
+cfa.condition.invalid
+cfa.condition.ok
+cfa.condition.drain
+cfa.condition.disease
+cfa.condition.irritation
+cfa.condition.nausea
+cfa.condition.slow
+cfa.condition.fear
+cfa.condition.poison
+cfa.condition.silence
+cfa.condition.hex
+cfa.condition.enthrallment
+cfa.condition.insanity
+cfa.condition.blindness
+cfa.condition.turncoat
+cfa.condition.web
+cfa.condition.sleep
+cfa.condition.unconsciousness
+cfa.condition.paralyze
+cfa.condition.death
+cfa.condition.missing
+
+cfa.spellsphere.fire
+cfa.spellsphere.water
+cfa.spellsphere.air
+cfa.spellsphere.earth
+cfa.spellsphere.mental
+cfa.spellsphere.divine
+
+cfa.itemslotgroup.backpack
+cfa.itemslotgroup.equipment
+cfa.itemslotgroup.party
+cfa.itemslotgroup.cursor
+
+cfa.gender.any
+cfa.gender.male
+cfa.gender.female
+
+cfa.itemprop.name
+cfa.itemprop.type
+cfa.itemprop.spell
+cfa.itemprop.price
+cfa.itemprop.isCursed
+cfa.itemprop.isCritical
+
+cfa.monsterprop.name
+cfa.monsterprop.type
+cfa.monsterprop.level
+cfa.monsterprop.faction
+
+cfa.disposition.neutral
+cfa.disposition.hostile
+cfa.disposition.friendly
+
+cfa.result.ok
+cfa.result.cancel
+
+cfa.charprop.shortName
+cfa.charprop.name
+cfa.charprop.profession
+cfa.charprop.profession_1
+cfa.charprop.race
+cfa.charprop.gender
+cfa.charprop.temper
+cfa.charprop.voice
+cfa.charprop.level
+cfa.charprop.classLevel
+cfa.charprop.attribute_base
+cfa.charprop.attribute_final
+cfa.charprop.attribute_1
+cfa.charprop.attribute_2
+cfa.charprop.attribute_3
+cfa.charprop.skill_base
+cfa.charprop.skill_final
+cfa.charprop.skill_growth
+cfa.charprop.skill_1
+cfa.charprop.condition
+cfa.charprop.status
+cfa.charprop.hpMax
+cfa.charprop.hpCurrent
+cfa.charprop.staminaMax
+cfa.charprop.staminaCurrent
+cfa.charprop.spMax
+cfa.charprop.spCurrent
+cfa.charprop.encumbrance
+cfa.charprop.portal_coordX
+cfa.charprop.portal_coordY
+cfa.charprop.portal_coordZ
+cfa.charprop.portal_location_id
+cfa.charprop.portal_is_set

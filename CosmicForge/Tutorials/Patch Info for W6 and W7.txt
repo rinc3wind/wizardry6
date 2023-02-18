@@ -1,0 +1,104 @@
+In this file you will find description of all available patches that *Cosmic Forge* allows for
+W6 & W7.
+
+1. Change attribute bonus generation algorithm.
+===============================================
+
+This is a cheating patch: it makes the probability of creation a powerful character to soar greatly.
+
+The original algorithm both for W6 & W7 is as follows:
+
+	Character gets						1d6+4	bonus points (5-10)
+	If what the character got is less than 9
+		(S)He gets					1d4+7	bonus points (8-11)	2/3
+	Otherwise
+		It is 1/20 that (s)he may gain additional	+8	bonus points (13-18)	1/60
+		It is 1/20 that (s)he may gain additional	+8	bonus points (21-26)	1/1200
+	End
+	
+	(8-11)	2/3
+	(5-10)	1179/1200
+	(13-18)	20/1200
+	(21-26)	1/1200
+
+The patched algorithm both for W6 & W7 is as follows:
+
+	Character gets						1d19+7	bonus points (8-26)
+	If what the character got is less than 9
+		(S)He gets					1d4+7	bonus points (8-11)	1/19
+	End
+
+The fix is reversible.
+
+
+
+2. Remove 'Swings per attack' restriction for Shoot and Throw attacks.
+======================================================================
+
+This is a cheating patch: it modifies the game logic (in this case the combat logic).
+
+The base logic of the game concerning this matter is that when the attack type of the monster or
+one of your characters is either 'Throw' or 'Shoot' type, than 'Swings per attack' is defaulting to 1.
+
+The patch removes that restriction, so in that case the monster or one of your characters can 'Shoot'
+or 'Throw' more than once per attack (providing that (s)he has 'Swings per attack' > 1). Thus the patch
+rejuvenates projectile and throwing weaponry.
+
+But there are several flaws in this patch:
+a. Your character will lose only one missile from its inventory regardless of the number of shots made
+   per attack (that is the cheating part).
+b. Animation for the missile will be drawn once (does not really matters).
+c. Some monsters will become VERY powerful, notably ROBOTS. ROBOTS have powerful enough weapons such as
+   LASER CANNON, PLASMA CANNON and SPECTRAL RAY which hurts badly the whole party. In the unpatched game
+   they will only shoot that once per attack, in the patched version they may (and will) shoot it more than
+   once.
+
+
+
+3. 'Slaying Weapons Bug' and 'Monster Slaying Ability Bug' (For W7 only).
+==========================================================================
+
+Those fixes simply modify game database and are not cheats.
+
+Basically, every creature of 'Fighter' type (yes, some monsters are fighters) in the game takes double damage
+from almost every weapon. This applies to your party fighters as well.
+
+The patches simply fix that issue. One is made to remove unfair double damage dealing to your fighters. Another
+is made to remove unfair double dealing to monsters.
+
+
+
+
+4. 'Resting' algorithm.
+==========================================================================
+
+Everybody agree that resting in original game is boring, annoying, useless and so on. The only parameter that gets recovered well is stamina. HP and Mana regenerate VERY VERY slowly.
+The fix changes that a bit:
+
+The original algorithm is as follows:
+	Character recovers
+		STAMINA:	(1d5 + 5)% of Stamina				per 1 game hour of resting
+		HP:		1d2-1						per 1 game hour of resting
+		MANA:		1d[SphereRegenValue + 1]-1			per 1 game hour of resting
+
+The new algorithm is as follows:
+	Character recovers
+		STAMINA:	(1d[VITALITY/2] + VITALITY/2)% of Stamina	per 1 game hour of resting in GOLD and per 30 game minutes in W7 DOS
+		HP:		VITALITY					per 30 game minutes of resting
+		MANA:		SphereRegenValue + 1				per 10 game minutes of resting
+
+Also a strange check is disabled that sometimes prevents HP regeneration during the rest. Probably it bears some meaning but I could not understand it.
+
+In other words if your character has VITALITY 18 and Mana Regeneration 2 in one of the Magic Spheres, then after 8 hours of rest (full uninterrupted rest) he will gain:
+	64/76/88/100/112/124				Percent of Stamina (Having VITALITY 10/12/14/16/18/20) (Double that for W7 DOS)
+	160/192/224/256/288/320				HP (Having VITALITY 10/12/14/16/18/20)
+	96/144/192/240/288/336				Mana (Having Mana Regeneration 1/2/3/4/5/6 in the corresponding Magic Sphere) (Divide by 6 for W6)
+instead of:
+	64						Percent of Stamina (Regardless of anything)
+	0 to 8 (average 4)				HP (Regardless of anything)
+	0 to 8/16/24/32/40/48 (average 4/8/12/16/20/24)	Mana (Having Mana Regeneration 1/2/3/4/5/6 in the corresponding Magic Sphere)
+
+The fix is reversible.
+
+
+
